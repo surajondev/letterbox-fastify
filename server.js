@@ -19,7 +19,10 @@ const fastify = require("fastify")({
 // CORS setup
 fastify.register(require("@fastify/cors"), {
   // Configure your CORS settings
-  origin: process.env.ALLOWED_ORIGINS?.split(",") || ["http://localhost:3000"],
+  origin: process.env.ALLOWED_ORIGINS?.split(",") || [
+    "http://localhost:3000",
+    "https://letterboxd.surajon.dev",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 });
@@ -46,7 +49,6 @@ fastify.register(require("@fastify/swagger"), {
   },
   exposeRoute: true,
 });
-
 
 // Register routes
 fastify.register(require("./routes/api"), {
