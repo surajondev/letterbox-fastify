@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: letterboxd-scraper
+    env: node
+    plan: free
+    buildCommand: |
+      npm install
+      npx puppeteer browsers install chrome
+    startCommand: node server.js # or adjust based on your entry point
+    runtime: node
+    region: oregon
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
