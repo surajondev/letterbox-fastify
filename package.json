@@ -20,6 +20,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
     "pino-pretty": "^10.3.1",
+    "puppeteer": "^24.8.2",
     "puppeteer-core": "^24.6.1"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 // routes/api/letterboxd.js
-const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
 
 // In-memory storage for scraping jobs (replace with database in production)
@@ -93,11 +93,9 @@ async function startScraping(username, jobId) {
     job.status = "in-progress";
     const filmsUrl = `https://letterboxd.com/${username}/films/by/rated-date/`;
 
-    // Connect to remote browser service
-    browser = await puppeteer.connect({
-      browserWSEndpoint:
-        process.env.BROWSERLESS_ENDPOINT ||
-        "wss://chrome.browserless.io?token=" + process.env.BROWSERLESS_TOKEN,
+    browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
 
     const page = await browser.newPage();
@@ -106,11 +104,7 @@ async function startScraping(username, jobId) {
     );
 
     // Visit the first page to determine total pages
-    await page.goto(filmsUrl, {
-      waitUntil: "networkidle2",
-      timeout: 60000,
-    });
-
+    await page.goto(filmsUrl, { waitUntil: "networkidle2", timeout: 60000 });
     await page.waitForSelector("ul.poster-list", { timeout: 10000 });
 
     let html = await page.content();
@@ -190,7 +184,7 @@ async function startScraping(username, jobId) {
     job.error = error.message;
     console.error("Error scraping Letterboxd:", error);
   } finally {
-    if (browser) await browser.disconnect();
+    if (browser) await browser.close();
 
     // Clean up after some time (1 hour)
     setTimeout(() => {

@@ -1,16 +1,95 @@
-// routes/api/model1.js - Fixed dispose issue
+// routes/api/model1.js - Modified to use different movie lists
 const tf = require("@tensorflow/tfjs");
 const fs = require("fs");
 const path = require("path");
 
-// Load processed movies data
 const processedMoviesPath = path.join(
   __dirname,
   "../../public/processed_movies3.json"
 );
-let processedMovies;
+const processedTop250MoviesPath = path.join(
+  __dirname,
+  "../../public/official-top-250-narrative-feature.json"
+);
+const processedTop250MoviesAllTimePath = path.join(
+  __dirname,
+  "../../public/letterboxd-top-250-films-history-collected-tmdb.json"
+);
+const processedClassicPath = path.join(
+  __dirname,
+  "../../public/classic-movies-for-beginners.json"
+);
+const processedComforMovies20sPath = path.join(
+  __dirname,
+  "../../public/comfort-movies.json"
+);
+const processedFeelingLostPath = path.join(
+  __dirname,
+  "../../public/feeling-lost-in-your-20s.json"
+);
+const processedTFeelingSomethingPath = path.join(
+  __dirname,
+  "../../public/for-when-you-want-to-feel-something.json"
+);
+const processedTop250HorrorPath = path.join(
+  __dirname,
+  "../../public/letterboxds-top-250-horror-films.json"
+);
+const processedTop100NarrativePath = path.join(
+  __dirname,
+  "../../public/official-top-100-narrative-feature-films-1.json"
+);
+const processedTop250MostFansPath = path.join(
+  __dirname,
+  "../../public/official-top-250-films-with-the-most-fans.json"
+);
+const processedTop250DcoumentariesPath = path.join(
+  __dirname,
+  "../../public/official-top-250-documentary-films.json"
+);
+const processedPsychosexualPath = path.join(
+  __dirname,
+  "../../public/psychosexual-dramas-nihilistic-fever-dreams.json"
+);
+const processedWhatIsRealityPath = path.join(
+  __dirname,
+  "../../public/what-is-reality.json"
+);
+const processedTop250WomensPath = path.join(
+  __dirname,
+  "../../public/women-directors-the-official-top-250-narrative.json"
+);
+const processedYourAreNotSamePath = path.join(
+  __dirname,
+  "../../public/youre-not-the-same-person-once-the-film-has.json"
+);
 
-// Cache for the model instance
+const processedEyeCandyPath = path.join(
+  __dirname,
+  "../../public/eye-candy.json"
+);
+
+const processedAnimePath = path.join(__dirname, "../../public/anime.json");
+
+
+let processedMovies;
+let top250Movies;
+let top250MoviesAllTime;
+let classicMovies;
+let comfortMovies20s;
+let feelingLostMovies;
+let feelSomethingMovies;
+let top250HorrorMovies;
+let top100NarrativeMovies;
+let top250MostFansMovies;
+let top250Documentaries;
+let psychosexualDramas;
+let whatIsRealityMovies;
+let top250WomensMovies;
+let youAreNotTheSameMovies;
+let eyeCandy;
+let anime;
+
 let modelInstance = null;
 
 /**
@@ -144,13 +223,7 @@ function formatRecommendations(recommendations) {
 /**
  * Train the model using userRatings
  */
-async function trainModel(
-  model,
-  userRatings,
-  processedMovies,
-  weights,
-  voteCountPenalty
-) {
+async function trainModel(model, userRatings, weights, voteCountPenalty) {
   const preferredLanguage = calculatePreferredLanguage(userRatings, 16); // Calculate preferred language for animation
 
   const inputs = [];
@@ -252,22 +325,81 @@ async function trainModel(
 }
 
 /**
- * Predict recommendations for all processed movies
+ * Predict recommendations using the trained model but from top250Movies list
  */
 async function recommendMovies(
   model,
-  processedMovies,
   weights,
   voteCountPenalty,
   minVoteCount,
   userRatings,
-  userPreferredGenre
+  userPreferredGenre,
+  movie_list
 ) {
+  // Determine which movie list to use
+  let moviesToRecommendFrom;
+
+  switch (movie_list) {
+    case "all":
+      moviesToRecommendFrom = processedMovies;
+      break;
+    case "top250Films":
+      moviesToRecommendFrom = top250Movies;
+      break;
+    case "top250FilmsAllTime":
+      moviesToRecommendFrom = top250MoviesAllTime;
+      break;
+    case "top100Under15000":
+      moviesToRecommendFrom = top100NarrativeMovies;
+      break;
+    case "top250MostFans":
+      moviesToRecommendFrom = top250MostFansMovies;
+      break;
+    case "top250WomenDirectors":
+      moviesToRecommendFrom = top250WomensMovies;
+      break;
+    case "top250Horro":
+      moviesToRecommendFrom = top250HorrorMovies;
+      break;
+    case "moveisThatFeels":
+      moviesToRecommendFrom = feelSomethingMovies;
+      break;
+    case "notSamePersion":
+      moviesToRecommendFrom = youAreNotTheSameMovies;
+      break;
+    case "psychoSexual":
+      moviesToRecommendFrom = psychosexualDramas;
+      break;
+    case "classicMovies":
+      moviesToRecommendFrom = classicMovies;
+      break;
+    case "comfortMovies":
+      moviesToRecommendFrom = comfortMovies20s;
+      break;
+    case "feelingLost20s":
+      moviesToRecommendFrom = feelingLostMovies;
+      break;
+    case "whatIsRealtiy":
+      moviesToRecommendFrom = whatIsRealityMovies;
+      break;
+    case "top250Documentaries":
+      moviesToRecommendFrom = top250Documentaries;
+      break;
+    case "eyeCanday":
+      moviesToRecommendFrom = eyeCandy;
+      break;
+    case "anime":
+      moviesToRecommendFrom = anime;
+      break;
+    default:
+      moviesToRecommendFrom = processedMovies;
+  }
+
   const maxPopularity = Math.max(
-    ...processedMovies.map((m) => m.popularity || 1)
+    ...moviesToRecommendFrom.map((m) => m.popularity || 1)
   );
   const maxVoteCount = Math.max(
-    ...processedMovies.map((m) => m.vote_count || 1)
+    ...moviesToRecommendFrom.map((m) => m.vote_count || 1)
   );
 
   const watchedMovieIds = userRatings.map((rating) => rating.id); // Get the list of watched movie IDs
@@ -281,7 +413,7 @@ async function recommendMovies(
     });
   });
 
-  const filteredMovies = processedMovies.filter(
+  const filteredMovies = moviesToRecommendFrom.filter(
     (movie) =>
       movie.vote_count >= minVoteCount &&
       !watchedMovieIds.includes(movie.id) &&
@@ -382,6 +514,7 @@ const model1Schema = {
       voteCountWeight: { type: "number" },
       popularityWeight: { type: "number" },
       userPreferredGenre: { type: ["number", "null"], default: null },
+      movie_list: { type: "string" },
     },
   },
   response: {
@@ -422,18 +555,33 @@ const model1Schema = {
 };
 
 module.exports = async function (fastify, opts) {
-  // Load the processed movies on startup
+  // Load both movie datasets on startup
+
+  const loadJSON = async (filePath) => {
+    const content = await fs.promises.readFile(filePath, "utf-8");
+    return JSON.parse(content);
+  };
+
   try {
-    const fileContent = await fs.promises.readFile(
-      processedMoviesPath,
-      "utf-8"
-    );
-    processedMovies = JSON.parse(fileContent);
-    fastify.log.info(
-      `Loaded ${processedMovies.length} processed movies for recommendations`
-    );
+    processedMovies = await loadJSON(processedMoviesPath);
+    top250Movies = await loadJSON(processedTop250MoviesPath);
+    top250MoviesAllTime = await loadJSON(processedTop250MoviesAllTimePath);
+    classicMovies = await loadJSON(processedClassicPath);
+    comfortMovies20s = await loadJSON(processedComforMovies20sPath);
+    feelingLostMovies = await loadJSON(processedFeelingLostPath);
+    feelSomethingMovies = await loadJSON(processedTFeelingSomethingPath);
+    top250HorrorMovies = await loadJSON(processedTop250HorrorPath);
+    top100NarrativeMovies = await loadJSON(processedTop100NarrativePath);
+    top250MostFansMovies = await loadJSON(processedTop250MostFansPath);
+    top250Documentaries = await loadJSON(processedTop250DcoumentariesPath);
+    psychosexualDramas = await loadJSON(processedPsychosexualPath);
+    whatIsRealityMovies = await loadJSON(processedWhatIsRealityPath);
+    top250WomensMovies = await loadJSON(processedTop250WomensPath);
+    youAreNotTheSameMovies = await loadJSON(processedYourAreNotSamePath);
+    eyeCandy = await loadJSON(processedEyeCandyPath);
+    anime = await loadJSON(processedAnimePath);
   } catch (error) {
-    fastify.log.error(`Error loading processed movies: ${error.message}`);
+    fastify.log.error(`Error loading movie data: ${error.message}`);
     throw new Error("Failed to load movie data");
   }
 
@@ -447,6 +595,7 @@ module.exports = async function (fastify, opts) {
         voteCountWeight = 0.5,
         popularityWeight = 0.8,
         userPreferredGenre = null,
+        movie_list = null,
       } = request.body;
 
       if (!userRatings || userRatings.length === 0) {
@@ -468,24 +617,18 @@ module.exports = async function (fastify, opts) {
       try {
         model = await buildModel(4); // Input shape is 4 (genreScore, popularity, voteAverage, voteCount)
 
-        // Train the model with user data
-        await trainModel(
-          model,
-          userRatings,
-          processedMovies,
-          weights,
-          voteCountPenalty
-        );
+        // Train the model with user data and processedMovies
+        await trainModel(model, userRatings, weights, voteCountPenalty);
 
-        // Generate recommendations
+        // Generate recommendations from top250Movies or movie_list if provided
         const recommendations = await recommendMovies(
           model,
-          processedMovies,
           weights,
           voteCountPenalty,
           minVoteCount,
           userRatings,
-          userPreferredGenre
+          userPreferredGenre,
+          movie_list
         );
 
         return recommendations;

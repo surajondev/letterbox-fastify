@@ -1,0 +1,2342 @@
+[
+  {
+    "id": 630,
+    "title": "The Wizard of Oz",
+    "overview": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
+    "genre_ids": [
+      12,
+      14,
+      10751,
+      0,
+      0
+    ],
+    "release_days": -11097,
+    "release_year": "1939",
+    "popularity": 11.29,
+    "vote_average": 7.59,
+    "vote_count": 5737,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/pfAZFD7I2hxW9HCChTuAzsdE6UX.jpg"
+  },
+  {
+    "id": 804,
+    "title": "Roman Holiday",
+    "overview": "Overwhelmed by her suffocating schedule, touring European princess Ann takes off for a night while in Rome. When a sedative she took from her doctor kicks in, however, she falls asleep on a park bench and is found by an American reporter, Joe Bradley, who takes her back to his apartment for safety. At work the next morning, Joe finds out Ann's regal identity and bets his editor he can get exclusive interview with her, but romance soon gets in the way.",
+    "genre_ids": [
+      10749,
+      35,
+      18,
+      0,
+      0
+    ],
+    "release_days": -5972,
+    "release_year": "1953",
+    "popularity": 5.029,
+    "vote_average": 7.9,
+    "vote_count": 2104,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/8lI9dmz1RH20FAqltkGelY1v4BE.jpg"
+  },
+  {
+    "id": 11252,
+    "title": "Psycho",
+    "overview": "A young female embezzler arrives at the Bates Motel, which has terrible secrets of its own.",
+    "genre_ids": [
+      27,
+      9648,
+      53,
+      0,
+      0
+    ],
+    "release_days": 10564,
+    "release_year": "1998",
+    "popularity": 2.0533,
+    "vote_average": 5.117,
+    "vote_count": 991,
+    "language_code": 0,
+    "title_length": 6,
+    "poster_path": "/tY0OLFUsTXdvNppTpnNc4EVYy2z.jpg"
+  },
+  {
+    "id": 433,
+    "title": "Mary Poppins",
+    "overview": "Mr Banks is looking for a nanny for his two mischievous children and comes across Mary Poppins, an angelic nanny. She not only brings a change in their lives but also spreads happiness.",
+    "genre_ids": [
+      35,
+      10751,
+      14,
+      0,
+      0
+    ],
+    "release_days": -1841,
+    "release_year": "1964",
+    "popularity": 5.7163,
+    "vote_average": 7.563,
+    "vote_count": 4765,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/ei8hhYCMfURfPOXKBnyl61be2iV.jpg"
+  },
+  {
+    "id": 289,
+    "title": "Casablanca",
+    "overview": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -9848,
+    "release_year": "1943",
+    "popularity": 29.2048,
+    "vote_average": 8.157,
+    "vote_count": 5616,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/oyGRZVIthHJjc98ekKpeWpDh8Ws.jpg"
+  },
+  {
+    "id": 1585,
+    "title": "It's a Wonderful Life",
+    "overview": "A holiday favourite for generations...  George Bailey has spent his entire life giving to the people of Bedford Falls.  All that prevents rich skinflint Mr. Potter from taking over the entire town is George's modest building and loan company.  But on Christmas Eve the business's $8,000 is lost and George's troubles begin.",
+    "genre_ids": [
+      18,
+      10751,
+      14,
+      0,
+      0
+    ],
+    "release_days": -8413,
+    "release_year": "1946",
+    "popularity": 8.8177,
+    "vote_average": 8.3,
+    "vote_count": 4488,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg"
+  },
+  {
+    "id": 389,
+    "title": "12 Angry Men",
+    "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -4649,
+    "release_year": "1957",
+    "popularity": 32.9357,
+    "vote_average": 8.548,
+    "vote_count": 9114,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg"
+  },
+  {
+    "id": 37247,
+    "title": "The Graduate",
+    "overview": "A disillusioned college graduate finds himself torn between his older lover and her daughter.",
+    "genre_ids": [
+      18,
+      10749,
+      35,
+      0,
+      0
+    ],
+    "release_days": -742,
+    "release_year": "1967",
+    "popularity": 4.9271,
+    "vote_average": 7.6,
+    "vote_count": 3433,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/znN9T8QHkwOAHIEtLB6bC9pNd8k.jpg"
+  },
+  {
+    "id": 4808,
+    "title": "Charade",
+    "overview": "After Regina Lampert falls for the dashing Peter Joshua on a skiing holiday in the French Alps, she discovers upon her return to Paris that her husband has been murdered. Soon, she and Peter are giving chase to three of her late husband's World War II cronies, Tex, Scobie and Gideon, who are after a quarter of a million dollars the quartet stole while behind enemy lines.",
+    "genre_ids": [
+      35,
+      9648,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -2223,
+    "release_year": "1963",
+    "popularity": 2.9193,
+    "vote_average": 7.669,
+    "vote_count": 1417,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/qqaPjC5FQidtKY65jbAKZPiOTaS.jpg"
+  },
+  {
+    "id": 433605,
+    "title": "Some Like It Hot",
+    "overview": "After the unexpected death of his best friend, a man examines his life and finds it incredibly lonely.  Inspired by an encounter with a beautiful and sexy model, he embarks with his three friends on what turns out to be a crazy (and slightly stupid) endeavor on a path towards fulfillment.",
+    "genre_ids": [
+      35,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 17165,
+    "release_year": "2016",
+    "popularity": 0.6241,
+    "vote_average": 6.867,
+    "vote_count": 15,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/cRSAmX8AWVWLyNgfcWV02iRLnl4.jpg"
+  },
+  {
+    "id": 872,
+    "title": "Singin' in the Rain",
+    "overview": "In 1927 Hollywood, a silent film production company and cast make a difficult transition to sound.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6475,
+    "release_year": "1952",
+    "popularity": 5.4115,
+    "vote_average": 8.145,
+    "vote_count": 3241,
+    "language_code": 0,
+    "title_length": 19,
+    "poster_path": "/w03EiJVHP8Un77boQeE7hg9DVdU.jpg"
+  },
+  {
+    "id": 15121,
+    "title": "The Sound of Music",
+    "overview": "In the years before the Second World War, a tomboyish postulant at an Austrian abbey is hired as a governess in the home of a widowed naval captain with seven children, and brings a new love of life and music into the home.",
+    "genre_ids": [
+      18,
+      10751,
+      10402,
+      10749,
+      0
+    ],
+    "release_days": -1766,
+    "release_year": "1965",
+    "popularity": 6.3019,
+    "vote_average": 7.7,
+    "vote_count": 3366,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/nv8bcyqXJh2tijWLa3MoUktlVZZ.jpg"
+  },
+  {
+    "id": 284,
+    "title": "The Apartment",
+    "overview": "Bud Baxter is a minor clerk in a huge New York insurance company, until he discovers a quick way to climb the corporate ladder. He lends out his apartment to the executives as a place to take their mistresses. Although he often has to deal with the aftermath of their visits, one night he's left with a major problem to solve.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -3481,
+    "release_year": "1960",
+    "popularity": 3.3993,
+    "vote_average": 8.2,
+    "vote_count": 2412,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg"
+  },
+  {
+    "id": 84834,
+    "title": "Double Indemnity",
+    "overview": "A scheming wife lures an insurance investigator into helping murder her husband and then declare it an accident. The investigator's boss, not knowing his man is involved in it, suspects murder and sets out to prove it.",
+    "genre_ids": [
+      80,
+      18,
+      53,
+      10770,
+      0
+    ],
+    "release_days": 1381,
+    "release_year": "1973",
+    "popularity": 1.3462,
+    "vote_average": 4.8,
+    "vote_count": 16,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/qsXRfLELPxBo3T4osRSc4YijHlt.jpg"
+  },
+  {
+    "id": 10242,
+    "title": "What Ever Happened to Baby Jane?",
+    "overview": "A former child star torments her paraplegic sister in their decaying Hollywood mansion.",
+    "genre_ids": [
+      53,
+      18,
+      27,
+      0,
+      0
+    ],
+    "release_days": -2619,
+    "release_year": "1962",
+    "popularity": 2.1344,
+    "vote_average": 7.911,
+    "vote_count": 1080,
+    "language_code": 0,
+    "title_length": 32,
+    "poster_path": "/msGYzyWwtjAaA3DScdgmvJ5MReG.jpg"
+  },
+  {
+    "id": 567,
+    "title": "Rear Window",
+    "overview": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "genre_ids": [
+      53,
+      9648,
+      0,
+      0,
+      0
+    ],
+    "release_days": -5632,
+    "release_year": "1954",
+    "popularity": 4.676,
+    "vote_average": 8.352,
+    "vote_count": 6683,
+    "language_code": 0,
+    "title_length": 11,
+    "poster_path": "/ILVF0eJxHMddjxeQhswFtpMtqx.jpg"
+  },
+  {
+    "id": 426,
+    "title": "Vertigo",
+    "overview": "A retired San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her.",
+    "genre_ids": [
+      9648,
+      10749,
+      53,
+      0,
+      0
+    ],
+    "release_days": -4236,
+    "release_year": "1958",
+    "popularity": 4.7061,
+    "vote_average": 8.163,
+    "vote_count": 5906,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/15uOEfqBNTVtDUT7hGBVCka0rZz.jpg"
+  },
+  {
+    "id": 759,
+    "title": "Gentlemen Prefer Blondes",
+    "overview": "Lorelei Lee is a beautiful showgirl engaged to be married to the wealthy Gus Esmond, much to the disapproval of Gus' rich father, Esmond Sr., who thinks that Lorelei is just after his money. When Lorelei goes on a cruise accompanied only by her best friend, Dorothy Shaw, Esmond Sr. hires Ernie Malone, a private detective, to follow her and report any questionable behavior that would disqualify her from the marriage.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6015,
+    "release_year": "1953",
+    "popularity": 2.1994,
+    "vote_average": 7.3,
+    "vote_count": 992,
+    "language_code": 0,
+    "title_length": 24,
+    "poster_path": "/fDozhst5HVJJcd3BM8ZOsKniO7Q.jpg"
+  },
+  {
+    "id": 3112,
+    "title": "The Night of the Hunter",
+    "overview": "In Depression-era West Virginia, a serial-killing preacher hunts two young children who know the whereabouts of a stash of money.",
+    "genre_ids": [
+      80,
+      18,
+      53,
+      0,
+      0
+    ],
+    "release_days": -5272,
+    "release_year": "1955",
+    "popularity": 3.0423,
+    "vote_average": 7.865,
+    "vote_count": 1662,
+    "language_code": 0,
+    "title_length": 23,
+    "poster_path": "/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg"
+  },
+  {
+    "id": 3078,
+    "title": "It Happened One Night",
+    "overview": "A runaway heiress makes a deal with the rogue reporter trailing her but the mismatched pair end up stuck with each other when their bus leaves them behind.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -13097,
+    "release_year": "1934",
+    "popularity": 2.0118,
+    "vote_average": 7.8,
+    "vote_count": 1293,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/2PNUGWAflH6UUumas0POMmokHlc.jpg"
+  },
+  {
+    "id": 20620,
+    "title": "Seconds",
+    "overview": "An unhappy middle-aged banker agrees to a procedure that will fake his death and give him a completely new look and identity; one that comes with its own price.",
+    "genre_ids": [
+      878,
+      53,
+      27,
+      0,
+      0
+    ],
+    "release_days": -1184,
+    "release_year": "1966",
+    "popularity": 1.2932,
+    "vote_average": 7.285,
+    "vote_count": 377,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/5G3q3OvulFTnFdiouaZdD8wjtIc.jpg"
+  },
+  {
+    "id": 981,
+    "title": "The Philadelphia Story",
+    "overview": "When a rich woman's ex-husband and a tabloid-type reporter turn up just before her planned remarriage, she begins to learn the truth about herself.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10619,
+    "release_year": "1940",
+    "popularity": 1.8627,
+    "vote_average": 7.634,
+    "vote_count": 892,
+    "language_code": 0,
+    "title_length": 22,
+    "poster_path": "/dKUubjvxO78XDts6VP1Ggcp4R9O.jpg"
+  },
+  {
+    "id": 14410,
+    "title": "Notorious",
+    "overview": "\"Notorious\" is the story of Christopher Wallace. Through raw talent and sheer determination, Wallace transforms himself from Brooklyn street hustler (once selling crack to pregnant women) to one of the greatest rappers of all time: The Notorious B.I.G. Follow his meteoric rise to fame and his refusal to succumb to expectations - redefining our notion of \"The American Dream.\"",
+    "genre_ids": [
+      10402,
+      18,
+      36,
+      0,
+      0
+    ],
+    "release_days": 14260,
+    "release_year": "2009",
+    "popularity": 2.3646,
+    "vote_average": 6.933,
+    "vote_count": 735,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/62NsZPgueSiE8y7dqtU3FSLFwYw.jpg"
+  },
+  {
+    "id": 29884,
+    "title": "Ball of Fire",
+    "overview": "A group of academics have spent years shut up in a house working on the definitive encyclopedia. When one of them discovers that his entry on slang is hopelessly outdated, he ventures into the wide world to learn about the evolving language. Here he meets Sugarpuss O’Shea, a nightclub singer, who’s on top of all the slang—and, it just so happens, needs a place to stay.",
+    "genre_ids": [
+      35,
+      10749,
+      80,
+      0,
+      0
+    ],
+    "release_days": -10257,
+    "release_year": "1941",
+    "popularity": 1.1466,
+    "vote_average": 7.369,
+    "vote_count": 217,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/t9L16dMTuNq4saLpQswZjkNvaMt.jpg"
+  },
+  {
+    "id": 3001,
+    "title": "How to Steal a Million",
+    "overview": "A woman must steal a statue from a Paris museum to help conceal her father's art forgeries.",
+    "genre_ids": [
+      35,
+      80,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -1268,
+    "release_year": "1966",
+    "popularity": 1.7309,
+    "vote_average": 7.497,
+    "vote_count": 605,
+    "language_code": 0,
+    "title_length": 22,
+    "poster_path": "/dkCHsyFdyA63nUXzEvDvqNhqUuO.jpg"
+  },
+  {
+    "id": 34106,
+    "title": "You Can't Take It with You",
+    "overview": "Alice, the only relatively normal member of the eccentric Sycamore family, falls in love with Tony Kirby, but his wealthy banker father and snobbish mother strongly disapprove of the match. When the Kirbys are invited to dinner to become better acquainted with their future in-laws, things don't turn out the way Alice had hoped.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11445,
+    "release_year": "1938",
+    "popularity": 1.3591,
+    "vote_average": 7.482,
+    "vote_count": 416,
+    "language_code": 0,
+    "title_length": 26,
+    "poster_path": "/9JltqbDyWstYW6gnvqDO6L5bOrx.jpg"
+  },
+  {
+    "id": 900,
+    "title": "Bringing Up Baby",
+    "overview": "David Huxley is waiting to get a bone he needs for his museum collection. Through a series of strange circumstances, he meets Susan Vance, and the duo have a series of misadventures which include a leopard called Baby.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11640,
+    "release_year": "1938",
+    "popularity": 1.9351,
+    "vote_average": 7.531,
+    "vote_count": 1001,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/vTNNOtemaYmtx3k2NpsLMRJKEwZ.jpg"
+  },
+  {
+    "id": 20334,
+    "title": "The Shop Around the Corner",
+    "overview": "Two employees at a gift shop can barely stand one another, without realising that they are falling in love through the post as each other's anonymous pen pal.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -10947,
+    "release_year": "1940",
+    "popularity": 1.6021,
+    "vote_average": 8.138,
+    "vote_count": 749,
+    "language_code": 0,
+    "title_length": 26,
+    "poster_path": "/dZ1aEzGYRiqJwPfjS6VL7wUkHmF.jpg"
+  },
+  {
+    "id": 705,
+    "title": "All About Eve",
+    "overview": "From the moment she glimpses her idol at the stage door, Eve Harrington is determined to take the reins of power away from the great actress Margo Channing. Eve maneuvers her way into Margo's Broadway role, becomes a sensation and even causes turmoil in the lives of Margo's director boyfriend, her playwright and his wife. Only the cynical drama critic sees through Eve, admiring her audacity and perfect pattern of deceit.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6993,
+    "release_year": "1950",
+    "popularity": 1.9952,
+    "vote_average": 8.081,
+    "vote_count": 1574,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/qU5QzNDrsusmuqKW6FsSvHYoIEQ.jpg"
+  },
+  {
+    "id": 1262471,
+    "title": "Laura",
+    "overview": "After being paralyzed in a car crash caused by her boyfriend, influencer Laura Edèlenyi seeks to embrace life and find justice. Based on real events.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 19978,
+    "release_year": "2024",
+    "popularity": 1.6758,
+    "vote_average": 5.6,
+    "vote_count": 8,
+    "language_code": 0,
+    "title_length": 5,
+    "poster_path": "/zVZIcXVMFdbzTTHOThrZX7o2DO7.jpg"
+  },
+  {
+    "id": 5972,
+    "title": "Witness for the Prosecution",
+    "overview": "Sir Wilfred Robarts, a famed barrister is released from the hospital, where he stayed for two months following his heart attack. Returning to the practise of his lawyer skills, he takes the case of Leonard Vole, an unemployed man who is accused of murdering an elderly lady friend of his, Mrs. Emily French. While Leonard Vole claims he's innocent, although all evidence points to him as the killer, his alibi witness, his cold German wife Christine, instead of entering the court as a witness for the defense, she becomes the witness for the prosecution and strongly claims her husband is guilty of the murder.",
+    "genre_ids": [
+      80,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": 4720,
+    "release_year": "1982",
+    "popularity": 0.3286,
+    "vote_average": 6.361,
+    "vote_count": 18,
+    "language_code": 0,
+    "title_length": 27,
+    "poster_path": "/sreUg3pWJGL24C1qV4HZLxkbZD7.jpg"
+  },
+  {
+    "id": 3086,
+    "title": "The Lady Eve",
+    "overview": "It's no accident when wealthy Charles falls for Jean. Jean is a con artist with her sights set on Charles' fortune. Matters complicate when Jean starts falling for her mark. When Charles suspects Jean is a gold digger, he dumps her. Jean, fixated on revenge and still pining for the millionaire, devises a plan to get back in Charles' life. With love and payback on her mind, she re-introduces herself to Charles, this time as an aristocrat named Lady Eve Sidwich.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10537,
+    "release_year": "1941",
+    "popularity": 1.0456,
+    "vote_average": 7.241,
+    "vote_count": 355,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/lJYD3CMgKtv12hazSHc7xt3i2uq.jpg"
+  },
+  {
+    "id": 558586,
+    "title": "Dial M for Murder",
+    "overview": "A made-for-television remake of Alfred Hitchcock’s 1954 film.",
+    "genre_ids": [
+      18,
+      9648,
+      53,
+      10770,
+      0
+    ],
+    "release_days": -778,
+    "release_year": "1967",
+    "popularity": 0.2135,
+    "vote_average": 6,
+    "vote_count": 1,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/9V95TXeYLYEPrMBtU7kIIyWdPNA.jpg"
+  },
+  {
+    "id": 845,
+    "title": "Strangers on a Train",
+    "overview": "Having met on a train, a smooth-talking psychotic socialite shares his theory on how two complete strangers can get away with murder to an amateur tennis player — a theory he plans to test out.",
+    "genre_ids": [
+      80,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6763,
+    "release_year": "1951",
+    "popularity": 2.1184,
+    "vote_average": 7.7,
+    "vote_count": 1739,
+    "language_code": 0,
+    "title_length": 20,
+    "poster_path": "/ihC083U7ef56Ui4x0P0dobojrZ1.jpg"
+  },
+  {
+    "id": 599,
+    "title": "Sunset Boulevard",
+    "overview": "A hack screenwriter writes a screenplay for a former silent film star who has faded into Hollywood obscurity.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -7084,
+    "release_year": "1950",
+    "popularity": 4.1676,
+    "vote_average": 8.294,
+    "vote_count": 2678,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/sC4Dpmn87oz9AuxZ15Lmip0Ftgr.jpg"
+  },
+  {
+    "id": 43824,
+    "title": "Waterloo Bridge",
+    "overview": "On the eve of World War II, a British officer revisits Waterloo Bridge and recalls the young man he was at the beginning of World War I and the young ballerina he met just before he left for the front.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10821,
+    "release_year": "1940",
+    "popularity": 1.049,
+    "vote_average": 7.474,
+    "vote_count": 156,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/2XgYKd5tr5b9W5Yfq80yTZqf3hy.jpg"
+  },
+  {
+    "id": 505379,
+    "title": "Rebecca",
+    "overview": "After a whirlwind romance with a wealthy widower, a naïve bride moves to his family estate but can't escape the haunting shadow of his late wife.",
+    "genre_ids": [
+      10749,
+      18,
+      9648,
+      53,
+      0
+    ],
+    "release_days": 18551,
+    "release_year": "2020",
+    "popularity": 2.3448,
+    "vote_average": 6.298,
+    "vote_count": 1109,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/kGhllBArW7ImDycSMIG5bj6GEPL.jpg"
+  },
+  {
+    "id": 1084140,
+    "title": "Holiday",
+    "overview": "Veronica, after a long trial and two years in prison for the alleged murder of her mother and her lover, is found innocent. She is only twenty years old, but it is difficult to look ahead...",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 19653,
+    "release_year": "2023",
+    "popularity": 0.6431,
+    "vote_average": 5.639,
+    "vote_count": 18,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/aibnjQQ5kqAshG0HN2Alzz9iaES.jpg"
+  },
+  {
+    "id": 20139,
+    "title": "The Children's Hour",
+    "overview": "An unruly student at a private all-girls boarding school scandalously accuses the two women who run it of having a romantic relationship.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -2935,
+    "release_year": "1961",
+    "popularity": 1.2447,
+    "vote_average": 7.7,
+    "vote_count": 363,
+    "language_code": 0,
+    "title_length": 19,
+    "poster_path": "/goyEWixvULM2IRN4KsKibyrJE4J.jpg"
+  },
+  {
+    "id": 55596,
+    "title": "Christmas in Connecticut",
+    "overview": "Elizabeth is the star of a successful cooking show and author of several cookbooks. But when her manager, Alexander sees forest ranger Jefferson, who lost his cabin in a fire, comment on TV about wishing he could get a home-cooked Christmas dinner, he arranges for a special live show on Christmas, for Elizabeth to cook him Christmas Dinner. Only Elizabeth can't cook, and trying to keep Jefferson and the viewing public from finding out on a live show may be a little difficult.",
+    "genre_ids": [
+      35,
+      10749,
+      10770,
+      0,
+      0
+    ],
+    "release_days": 8391,
+    "release_year": "1992",
+    "popularity": 0.3438,
+    "vote_average": 4.7,
+    "vote_count": 31,
+    "language_code": 0,
+    "title_length": 24,
+    "poster_path": "/gR5DOCDn5s4uCgTbcsaBBI1ci98.jpg"
+  },
+  {
+    "id": 19542,
+    "title": "The Red Shoes",
+    "overview": "In this classic drama, Vicky Page is an aspiring ballerina torn between her dedication to dance and her desire to love. While her imperious instructor, Boris Lermontov, urges to her to forget anything but ballet, Vicky begins to fall for the charming young composer Julian Craster. Eventually Vicky, under great emotional stress, must choose to pursue either her art or her romance, a decision that carries serious consequences.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -7787,
+    "release_year": "1948",
+    "popularity": 1.4907,
+    "vote_average": 8,
+    "vote_count": 685,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/vPvpBWFWDvEXuQBkoYgA6A89GVp.jpg"
+  },
+  {
+    "id": 805,
+    "title": "Rosemary's Baby",
+    "overview": "A young couple, Rosemary and Guy, moves into an infamous New York apartment building, known by frightening legends and mysterious events, with the purpose of starting a family.",
+    "genre_ids": [
+      18,
+      27,
+      53,
+      0,
+      0
+    ],
+    "release_days": -568,
+    "release_year": "1968",
+    "popularity": 4.2755,
+    "vote_average": 7.8,
+    "vote_count": 4039,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/nclYFGpVzfbiORO5ELVVdxzt9Vg.jpg"
+  },
+  {
+    "id": 212,
+    "title": "Arsenic and Old Lace",
+    "overview": "Mortimer Brewster, a newspaper drama critic, playwright, and author known for his diatribes against marriage, suddenly falls in love and gets married;  but when he makes a quick trip home to tell his two maiden aunts, he finds out his aunts' hobby - killing lonely old men and burying them in the cellar!",
+    "genre_ids": [
+      35,
+      80,
+      0,
+      0,
+      0
+    ],
+    "release_days": -9253,
+    "release_year": "1944",
+    "popularity": 1.1515,
+    "vote_average": 7.6,
+    "vote_count": 964,
+    "language_code": 0,
+    "title_length": 20,
+    "poster_path": "/xG1GEEQGgExKl0WT5sRo1Arst5D.jpg"
+  },
+  {
+    "id": 22292,
+    "title": "The Ghost and Mrs. Muir",
+    "overview": "A young British widow rents a seaside cottage and soon becomes haunted by the ghost of its former owner.",
+    "genre_ids": [
+      10749,
+      14,
+      18,
+      0,
+      0
+    ],
+    "release_days": -8257,
+    "release_year": "1947",
+    "popularity": 0.8632,
+    "vote_average": 7.536,
+    "vote_count": 319,
+    "language_code": 0,
+    "title_length": 23,
+    "poster_path": "/idoD3cwfwj86BPvVoWVgWhnT2xq.jpg"
+  },
+  {
+    "id": 3085,
+    "title": "His Girl Friday",
+    "overview": "Walter Burns is an irresistibly conniving newspaper publisher desperate to woo back his paper’s star reporter, who also happens to be his estranged wife. She’s threatening to quit and settle down with a new beau, but, as Walter knows, she has a weakness: she can’t resist a juicy scoop.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10941,
+    "release_year": "1940",
+    "popularity": 2.2102,
+    "vote_average": 7.399,
+    "vote_count": 859,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/lu86Y9zTPH3neCiUzLzHCEFHf7f.jpg"
+  },
+  {
+    "id": 1859,
+    "title": "Ninotchka",
+    "overview": "A stern Russian woman sent to Paris on official business finds herself attracted to a man who represents everything she is supposed to detest.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10997,
+    "release_year": "1939",
+    "popularity": 1.2658,
+    "vote_average": 7.5,
+    "vote_count": 393,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/v4MkgNqZyodYwBDNbZ64MF9tVEL.jpg"
+  },
+  {
+    "id": 10297,
+    "title": "How to Marry a Millionaire",
+    "overview": "Three women set out to find eligible millionaires to marry, but find true love in the process.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -5908,
+    "release_year": "1953",
+    "popularity": 1.6388,
+    "vote_average": 6.804,
+    "vote_count": 525,
+    "language_code": 0,
+    "title_length": 26,
+    "poster_path": "/7GsmvnvnHJHdG1l8VOPxWJwnUzZ.jpg"
+  },
+  {
+    "id": 14675,
+    "title": "The Awful Truth",
+    "overview": "Unfounded suspicions lead a married couple to begin divorce proceedings, whereupon they start undermining each other's attempts to find new romance.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11760,
+    "release_year": "1937",
+    "popularity": 1.0984,
+    "vote_average": 7.207,
+    "vote_count": 317,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/2VtsJoxvjpcMpwh0gweS8IMfHxO.jpg"
+  },
+  {
+    "id": 198,
+    "title": "To Be or Not to Be",
+    "overview": "During the Nazi occupation of Poland, an acting troupe becomes embroiled in a Polish soldier's efforts to track down a German spy.",
+    "genre_ids": [
+      35,
+      10752,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -10163,
+    "release_year": "1942",
+    "popularity": 1.1338,
+    "vote_average": 7.83,
+    "vote_count": 759,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/dDQRpEoyjHT4fzw9cNklIvZuXYg.jpg"
+  },
+  {
+    "id": 55207,
+    "title": "Gaslight",
+    "overview": "Twenty years removed from Alice Barlow's murder by a thief looking for her jewels, newlyweds Paul and Bella Mallen move into the very house where the crime was committed. Retired detective B.G. Rough, who worked on the Barlow case, is still in the area and grows suspicious of Paul, who he feels bears a striking resemblance to one of Barlow's relatives. Rough must find the truth before the killer can strike again and reclaim his bounty.",
+    "genre_ids": [
+      53,
+      9648,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10715,
+    "release_year": "1940",
+    "popularity": 0.6518,
+    "vote_average": 7.1,
+    "vote_count": 96,
+    "language_code": 0,
+    "title_length": 8,
+    "poster_path": "/h3xaVryGKjvXjomHaqmqjjbasUC.jpg"
+  },
+  {
+    "id": 42752,
+    "title": "Midnight",
+    "overview": "Jury foreman Edward Weldon's questioning leads to the death sentence for Ethel Saxon. His daughter Stella claims to have killed her lover, the gangster Garboni, just as Saxon was to sit in the electric chair.",
+    "genre_ids": [
+      18,
+      80,
+      0,
+      0,
+      0
+    ],
+    "release_days": -13084,
+    "release_year": "1934",
+    "popularity": 0.2685,
+    "vote_average": 5,
+    "vote_count": 23,
+    "language_code": 0,
+    "title_length": 8,
+    "poster_path": "/8SRQPlAhyepVvf5V1andNVCVJke.jpg"
+  },
+  {
+    "id": 17057,
+    "title": "In a Lonely Place",
+    "overview": "A screenwriter with a violent temper is a murder suspect until his lovely neighbor clears him. However, she soon starts to have her doubts.",
+    "genre_ids": [
+      18,
+      10749,
+      9648,
+      0,
+      0
+    ],
+    "release_days": -7169,
+    "release_year": "1950",
+    "popularity": 1.4561,
+    "vote_average": 7.596,
+    "vote_count": 602,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/vdlCUR7hu7BI8JRl46n66PiG17k.jpg"
+  },
+  {
+    "id": 3080,
+    "title": "Top Hat",
+    "overview": "Showman Jerry Travers is working for producer Horace Hardwick in London. Jerry demonstrates his new dance steps late one night in Horace's hotel room, much to the annoyance of sleeping Dale Tremont below. She goes upstairs to complain and the two are immediately attracted to each other. Complications arise when Dale mistakes Jerry for Horace.",
+    "genre_ids": [
+      10402,
+      35,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -12544,
+    "release_year": "1935",
+    "popularity": 1.6928,
+    "vote_average": 7.266,
+    "vote_count": 299,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/qoPBiN6PBs2NsP7BNOJGCnmwruG.jpg"
+  },
+  {
+    "id": 28288,
+    "title": "The Gay Divorcee",
+    "overview": "Seeking a divorce from her absentee husband, Mimi Glossop travels to an English seaside resort. There she falls in love with dancer Guy Holden, whom she later mistakes for the corespondent her lawyer hired.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -12865,
+    "release_year": "1934",
+    "popularity": 0.6575,
+    "vote_average": 6.9,
+    "vote_count": 133,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/8kTPsctFZVLktaZbCN7isYFfb4T.jpg"
+  },
+  {
+    "id": 702,
+    "title": "A Streetcar Named Desire",
+    "overview": "A disturbed, aging Southern belle moves in with her sister for solace — but being face-to-face with her brutish brother-in-law accelerates her downward spiral.",
+    "genre_ids": [
+      18,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6679,
+    "release_year": "1951",
+    "popularity": 3.5002,
+    "vote_average": 7.611,
+    "vote_count": 1385,
+    "language_code": 0,
+    "title_length": 24,
+    "poster_path": "/aicdlO5vt7z2ARm279eGzJeYCLQ.jpg"
+  },
+  {
+    "id": 3529,
+    "title": "The Thin Man",
+    "overview": "A husband and wife detective team takes on the search for a missing inventor and almost get killed for their efforts.",
+    "genre_ids": [
+      35,
+      9648,
+      80,
+      0,
+      0
+    ],
+    "release_days": -13005,
+    "release_year": "1934",
+    "popularity": 1.0382,
+    "vote_average": 7.5,
+    "vote_count": 480,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/6cL89ok9t8xEKboOjOVga2W66jj.jpg"
+  },
+  {
+    "id": 24005,
+    "title": "Don't Bother to Knock",
+    "overview": "An airline pilot pursues a live-in babysitter at his hotel and gradually realizes she is not as stable as perhaps she should be.",
+    "genre_ids": [
+      18,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6376,
+    "release_year": "1952",
+    "popularity": 0.5423,
+    "vote_average": 6.66,
+    "vote_count": 150,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/btbTidQlmg8brVHC7tN0HnAy8Dm.jpg"
+  },
+  {
+    "id": 164,
+    "title": "Breakfast at Tiffany's",
+    "overview": "Holly Golightly is an eccentric New York City playgirl determined to marry a Brazilian millionaire. But when young writer Paul Varjak moves into her apartment building, her past threatens to get in their way.",
+    "genre_ids": [
+      35,
+      10749,
+      18,
+      0,
+      0
+    ],
+    "release_days": -3009,
+    "release_year": "1961",
+    "popularity": 4.4978,
+    "vote_average": 7.644,
+    "vote_count": 4246,
+    "language_code": 0,
+    "title_length": 22,
+    "poster_path": "/79xm4gXw4l7A5D0XukUOJRocFYQ.jpg"
+  },
+  {
+    "id": 511809,
+    "title": "West Side Story",
+    "overview": "Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy.",
+    "genre_ids": [
+      18,
+      10749,
+      80,
+      0,
+      0
+    ],
+    "release_days": 18969,
+    "release_year": "2021",
+    "popularity": 3.8427,
+    "vote_average": 6.975,
+    "vote_count": 1618,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/yfz3IUoYYSY32tkb97HlUBGFsnh.jpg"
+  },
+  {
+    "id": 18727,
+    "title": "Heaven Can Wait",
+    "overview": "Spoiled playboy Henry van Cleve dies and arrives at the entrance to Hell, a final destination he is sure he deserves after living a life of profligacy. The devil, however, isn't so sure Henry meets Hell's standards. Convinced he is where he belongs, Henry recounts his life's deeds, both good and bad, including an act of indiscretion during his 25-year marriage to his wife, Martha, with the hope that \"His Excellency\" will arrive at the proper judgment.",
+    "genre_ids": [
+      35,
+      10749,
+      14,
+      18,
+      0
+    ],
+    "release_days": -9646,
+    "release_year": "1943",
+    "popularity": 1.101,
+    "vote_average": 6.919,
+    "vote_count": 227,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/c0jKfLvvggNqvMDhOWxaBMGXkz7.jpg"
+  },
+  {
+    "id": 25673,
+    "title": "A Place in the Sun",
+    "overview": "A young social climber wins the heart of a beautiful heiress but his former girlfriend's pregnancy stands in the way of his ambition.",
+    "genre_ids": [
+      18,
+      10749,
+      80,
+      0,
+      0
+    ],
+    "release_days": -6778,
+    "release_year": "1951",
+    "popularity": 1.3526,
+    "vote_average": 7.287,
+    "vote_count": 392,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/3tKYbChwIRYCwFrMUDBkbZyDIoN.jpg"
+  },
+  {
+    "id": 43864,
+    "title": "Stage Door",
+    "overview": "The ups and downs in the lives and careers of a group of ambitious young actresses and show girls from disparate backgrounds brought together in a theatrical hostel. Centres particularly on the conflict and growing friendship between Terry Randall, a rich girl confident in her talent and ability to make it to the top on the stage, and Jean Maitland, a world weary and cynical trouper who has taken the hard knocks of the ruthless and over-populated world of the Broadway apprentice.",
+    "genre_ids": [
+      35,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11773,
+    "release_year": "1937",
+    "popularity": 0.6837,
+    "vote_average": 7,
+    "vote_count": 120,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/p4zqAKoJAtmkK71IyeWHc6spEKB.jpg"
+  },
+  {
+    "id": 3309,
+    "title": "Mildred Pierce",
+    "overview": "A hard-working mother inches towards disaster as she divorces her husband and starts a successful restaurant business to support her spoiled daughter.",
+    "genre_ids": [
+      80,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": -8839,
+    "release_year": "1945",
+    "popularity": 1.5612,
+    "vote_average": 7.611,
+    "vote_count": 404,
+    "language_code": 0,
+    "title_length": 14,
+    "poster_path": "/iSXi0xvPUPwEI2xxWZrcKJXpUYc.jpg"
+  },
+  {
+    "id": 13562,
+    "title": "My Man Godfrey",
+    "overview": "Fifth Avenue socialite Irene Bullock needs a \"forgotten man\" to win a scavenger hunt, and no one is more forgotten than Godfrey Park, who resides in a dump by the East River. Irene hires Godfrey as a servant for her riotously unhinged family, to the chagrin of her spoiled sister, Cornelia, who tries her best to get Godfrey fired. As Irene falls for her new butler, Godfrey turns the tables and teaches the frivolous Bullocks a lesson or two.",
+    "genre_ids": [
+      35,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -12174,
+    "release_year": "1936",
+    "popularity": 7.221,
+    "vote_average": 7.564,
+    "vote_count": 358,
+    "language_code": 0,
+    "title_length": 14,
+    "poster_path": "/wtfOW7fIxBZWY78rvUoPpWhMSiR.jpg"
+  },
+  {
+    "id": 1815,
+    "title": "The Big Sleep",
+    "overview": "Private eye Philip Marlowe investigates a case of blackmail involving the two wild daughters of a rich general, a pornographer and a gangster.",
+    "genre_ids": [
+      80,
+      9648,
+      0,
+      0,
+      0
+    ],
+    "release_days": 2993,
+    "release_year": "1978",
+    "popularity": 0.7543,
+    "vote_average": 5.9,
+    "vote_count": 87,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/8GQIPVoISizOE9t0R9NO2ypG9wa.jpg"
+  },
+  {
+    "id": 22584,
+    "title": "To Have and Have Not",
+    "overview": "A Martinique charter boat skipper gets mixed up with the underground French resistance operatives during WWII.",
+    "genre_ids": [
+      12,
+      10749,
+      10752,
+      0,
+      0
+    ],
+    "release_days": -9112,
+    "release_year": "1945",
+    "popularity": 0.6927,
+    "vote_average": 7.5,
+    "vote_count": 528,
+    "language_code": 0,
+    "title_length": 20,
+    "poster_path": "/jLOmQ6yHWSKZDrJ2CMuSrXE3t3J.jpg"
+  },
+  {
+    "id": 396,
+    "title": "Who's Afraid of Virginia Woolf?",
+    "overview": "A history professor and his wife entertain a young couple who are new to the university's faculty. As the drinks flow, secrets come to light, and the middle-aged couple unload onto their guests the full force of the bitterness, dysfunction, and animosity that defines their marriage.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -1289,
+    "release_year": "1966",
+    "popularity": 2.0097,
+    "vote_average": 7.729,
+    "vote_count": 851,
+    "language_code": 0,
+    "title_length": 31,
+    "poster_path": "/wF7ihB5V5gSm6zxjv3ZhHOpgREI.jpg"
+  },
+  {
+    "id": 28289,
+    "title": "Cactus Flower",
+    "overview": "Distraught when her middle-aged lover breaks a date with her, 21-year-old Toni Simmons attempts suicide. Impressed by her action, her lover, dentist Julian Winston reconsiders marrying Toni, but he worries about her insistence on honesty. Having fabricated a wife and three children, Julian readily accepts when his devoted nurse, Stephanie, who has secretly loved Julian for years, offers to act as his wife and demand a divorce.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -16,
+    "release_year": "1969",
+    "popularity": 0.9304,
+    "vote_average": 7.128,
+    "vote_count": 222,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/oabi6jdkxP3KHMNywKn6nQeDzQZ.jpg"
+  },
+  {
+    "id": 33630,
+    "title": "Vivacious Lady",
+    "overview": "College town life gets turned upside down after a button-down botany professor secretly weds a sizzling night-club singer.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11556,
+    "release_year": "1938",
+    "popularity": 0.5026,
+    "vote_average": 6.868,
+    "vote_count": 57,
+    "language_code": 0,
+    "title_length": 14,
+    "poster_path": "/lhkDEnO3gZLDAdLihgMpcRn38G.jpg"
+  },
+  {
+    "id": 11206,
+    "title": "Wait Until Dark",
+    "overview": "After a flight back home, Sam Hendrix returns with a doll he innocently acquired along the way. As it turns out, the doll is actually stuffed with heroin, and a group of criminals led by the ruthless Roat has followed Hendrix back to his place to retrieve it. When Hendrix leaves for business, the crooks make their move -- and find his blind wife, Susy, alone in the apartment. Soon, a life-threatening game begins between Susy and the thugs.",
+    "genre_ids": [
+      53,
+      27,
+      0,
+      0,
+      0
+    ],
+    "release_days": -798,
+    "release_year": "1967",
+    "popularity": 1.2506,
+    "vote_average": 7.3,
+    "vote_count": 543,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/cNW3ewCB52KkxzSE47PcE5Bqvmr.jpg"
+  },
+  {
+    "id": 31773,
+    "title": "Libeled Lady",
+    "overview": "When a major newspaper accuses wealthy socialite Connie Allenbury of being a home-wrecker, and she files a multi-million-dollar libel lawsuit, the publication's frazzled head editor, Warren Haggerty, must find a way to turn the tables on her. Soon Haggerty's harried fiancée, Gladys Benton, and his dashing friend Bill Chandler are in on a scheme that aims to discredit Connie, with amusing and unexpected results.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -12137,
+    "release_year": "1936",
+    "popularity": 0.6473,
+    "vote_average": 7.298,
+    "vote_count": 119,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/mu2zGdHZJ9IASvnQktjGLZ4kU13.jpg"
+  },
+  {
+    "id": 381,
+    "title": "To Catch a Thief",
+    "overview": "An ex-thief is accused of enacting a new crime spree, so to clear his name he sets off to catch the new thief, who’s imitating his signature style.",
+    "genre_ids": [
+      9648,
+      10749,
+      53,
+      0,
+      0
+    ],
+    "release_days": -5265,
+    "release_year": "1955",
+    "popularity": 3.3118,
+    "vote_average": 7.3,
+    "vote_count": 1548,
+    "language_code": 0,
+    "title_length": 16,
+    "poster_path": "/9UdAlTenWqxj2l5oFExkjuVHmKO.jpg"
+  },
+  {
+    "id": 25970,
+    "title": "I Married a Witch",
+    "overview": "A 17th-century witch returns to wreak havoc in the life of a descendant of the Puritan witch hunter who burned her.",
+    "genre_ids": [
+      35,
+      10749,
+      14,
+      27,
+      0
+    ],
+    "release_days": -9925,
+    "release_year": "1942",
+    "popularity": 0.885,
+    "vote_average": 6.84,
+    "vote_count": 209,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/je47It0cpuFzM7wUReWlUQX0vXY.jpg"
+  },
+  {
+    "id": 571,
+    "title": "The Birds",
+    "overview": "Thousands of birds flock into a seaside town and terrorize the residents in a series of deadly attacks.",
+    "genre_ids": [
+      27,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -2471,
+    "release_year": "1963",
+    "popularity": 3.2939,
+    "vote_average": 7.518,
+    "vote_count": 4190,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/eClg8QPg8mwB6INIC4pyR5pAbDr.jpg"
+  },
+  {
+    "id": 6620,
+    "title": "Sabrina",
+    "overview": "Linus and David Larrabee are the two sons of a very wealthy family. Linus is all work – busily running the family corporate empire, he has no time for a wife and family. David is all play – technically he is employed by the family business, but never shows up for work, spends all his time entertaining, and has been married and divorced three times. Meanwhile, Sabrina Fairchild is the young, shy, and awkward daughter of the household chauffeur, who goes away to Paris for two years, and returns to capture David's attention, while falling in love with Linus.",
+    "genre_ids": [
+      35,
+      10749,
+      18,
+      0,
+      0
+    ],
+    "release_days": -5592,
+    "release_year": "1954",
+    "popularity": 3.5569,
+    "vote_average": 7.5,
+    "vote_count": 1266,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/8vvgKw3DbEPNlJAdHe7xXzhb2gN.jpg"
+  },
+  {
+    "id": 43850,
+    "title": "The Divorce of Lady X",
+    "overview": "The morning after a London barrister lets a mystery woman stay in his suite, a friend files for divorce.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -11674,
+    "release_year": "1938",
+    "popularity": 0.5462,
+    "vote_average": 6.029,
+    "vote_count": 17,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/hJIu073QhiXdxOYlmA07yNRPFRP.jpg"
+  },
+  {
+    "id": 592983,
+    "title": "Spellbound",
+    "overview": "When a powerful spell turns her parents into giant monsters, a teenage princess must journey into the wild to reverse the curse before it's too late.",
+    "genre_ids": [
+      16,
+      14,
+      10751,
+      12,
+      35
+    ],
+    "release_days": 20049,
+    "release_year": "2024",
+    "popularity": 11.5131,
+    "vote_average": 6.725,
+    "vote_count": 256,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/4dSrwXJNKtMtlkwJPgZMkjjuHvD.jpg"
+  },
+  {
+    "id": 23159,
+    "title": "The Talk of the Town",
+    "overview": "Hilarity ensues when a falsely accused fugitive from justice hides at the house of his childhood friend, which she has recently rented to a high-principled law teacher.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -9996,
+    "release_year": "1942",
+    "popularity": 0.8996,
+    "vote_average": 7.31,
+    "vote_count": 108,
+    "language_code": 0,
+    "title_length": 20,
+    "poster_path": "/naMSxieb5cD1bGCu0rZ7zLJ6mtA.jpg"
+  },
+  {
+    "id": 1393614,
+    "title": "Suspicion",
+    "overview": "A young man delves into the sinister world of black magic after the brutal murder of his best friend and his daughter. As he hunts for vengeance, he faces moral dilemmas and shocking betrayals that threaten to shatter his closest relationships. In this gripping tale of friendship, love and revenge, he must confront his newfound powers and decide how far he's willing to go to deliver justice.",
+    "genre_ids": [
+      80,
+      27,
+      53,
+      0,
+      0
+    ],
+    "release_days": 20054,
+    "release_year": "2024",
+    "popularity": 1.7071,
+    "vote_average": 4.2,
+    "vote_count": 4,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/xAPubDwDLG9d23OrmdWpUifV7Nr.jpg"
+  },
+  {
+    "id": 25563,
+    "title": "Marked Woman",
+    "overview": "In the underworld of Manhattan, a woman dares to stand up to one of the city's most powerful gangsters.",
+    "genre_ids": [
+      80,
+      18,
+      53,
+      0,
+      0
+    ],
+    "release_days": -11954,
+    "release_year": "1937",
+    "popularity": 0.8804,
+    "vote_average": 6.528,
+    "vote_count": 72,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/rJHNkbEnyjQUl8DXWxk127hNEhD.jpg"
+  },
+  {
+    "id": 27622,
+    "title": "A Woman's Face",
+    "overview": "A female blackmailer with a disfiguring facial scar meets a plastic surgeon who offers her the possibility of looking like a normal woman.",
+    "genre_ids": [
+      18,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -10464,
+    "release_year": "1941",
+    "popularity": 0.4969,
+    "vote_average": 6.888,
+    "vote_count": 67,
+    "language_code": 0,
+    "title_length": 14,
+    "poster_path": "/qqrQa8UiuhS3AFGclcwGBe3GjSK.jpg"
+  },
+  {
+    "id": 20325,
+    "title": "Swing Time",
+    "overview": "Lucky is tricked into missing his own wedding to Margaret and has to make $25,000 so her father will allow him to marry her. He and business partner Pop go to New York where they run into dancing instructor Penny. She and Lucky form a successful dance partnership, but romance is blighted by his old attachment to Margaret and hers for Ricky.",
+    "genre_ids": [
+      10749,
+      35,
+      0,
+      0,
+      0
+    ],
+    "release_days": -12179,
+    "release_year": "1936",
+    "popularity": 0.9692,
+    "vote_average": 6.836,
+    "vote_count": 229,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/cECQGtw13ooPIuEpVWOUlUXaAnO.jpg"
+  },
+  {
+    "id": 16227,
+    "title": "Dark Passage",
+    "overview": "A man convicted of murdering his wife escapes from prison and works with a woman to try and prove his innocence.",
+    "genre_ids": [
+      10749,
+      53,
+      9648,
+      0,
+      0
+    ],
+    "release_days": -8154,
+    "release_year": "1947",
+    "popularity": 1.332,
+    "vote_average": 7.3,
+    "vote_count": 328,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/dvwmiD6qQ05gojrFQRaFbdhbNDF.jpg"
+  },
+  {
+    "id": 59346,
+    "title": "Darling",
+    "overview": "Darling is a woman of today. It seems to always choose the wrong path. Suffers but does not look like a victim. Do not feel sorry for herself. On the contrary, shows a passion for life against all odds. She is struggling to exist. If you fall, get up. Because Darling is naive and fearless, brave and instinctive. Has the life force of a tragic heroine.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 13824,
+    "release_year": "2007",
+    "popularity": 0.2752,
+    "vote_average": 6.2,
+    "vote_count": 32,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/wI56k9xKYni8Tan1iq2HCHHFpbX.jpg"
+  },
+  {
+    "id": 142461,
+    "title": "Revolution! The Making of 'Bonnie and Clyde'",
+    "overview": "The making-of documentary of Bonnie and Clyde.",
+    "genre_ids": [
+      99,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 13963,
+    "release_year": "2008",
+    "popularity": 0.1779,
+    "vote_average": 4.6,
+    "vote_count": 5,
+    "language_code": 0,
+    "title_length": 44,
+    "poster_path": "/9fx3l6HJuK2gs4dTvmhOma3yMMR.jpg"
+  },
+  {
+    "id": 664596,
+    "title": "Funny Face",
+    "overview": "In a Brooklyn threatened by disfigurement from greedy urban developers, two young people meet in a late-night bodega. Their unexpected bond takes on a romantic tone and brings solace to these two superheroes who are powerless in the face of oppression.",
+    "genre_ids": [
+      18,
+      80,
+      0,
+      0,
+      0
+    ],
+    "release_days": 18716,
+    "release_year": "2021",
+    "popularity": 0.5329,
+    "vote_average": 4.688,
+    "vote_count": 16,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/fD2ZAcCt4BEhKGpTxdBFoSRCn1Y.jpg"
+  },
+  {
+    "id": 3767,
+    "title": "Gilda",
+    "overview": "A gambler discovers an old flame while in Argentina, but she's married to his new boss.",
+    "genre_ids": [
+      10749,
+      18,
+      53,
+      0,
+      0
+    ],
+    "release_days": -8652,
+    "release_year": "1946",
+    "popularity": 1.7826,
+    "vote_average": 7.5,
+    "vote_count": 591,
+    "language_code": 0,
+    "title_length": 5,
+    "poster_path": "/46eKPjoWEyNBAQKDoXEcDFBcaUw.jpg"
+  },
+  {
+    "id": 77210,
+    "title": "Design for Living",
+    "overview": "An independent woman can't choose between the two men she loves.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -13152,
+    "release_year": "1933",
+    "popularity": 0.7704,
+    "vote_average": 7.146,
+    "vote_count": 195,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/h0T4FHsY51IccSGqGfaoYsd7hyx.jpg"
+  },
+  {
+    "id": 23574,
+    "title": "What a Way to Go!",
+    "overview": "A four-time widow discusses her four marriages, in which all of her husbands became incredibly rich and died prematurely because of their drive to be rich.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -1980,
+    "release_year": "1964",
+    "popularity": 1.1628,
+    "vote_average": 7,
+    "vote_count": 88,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/6fuRkL3OhoeubEOULCMVJsUTaAU.jpg"
+  },
+  {
+    "id": 156597,
+    "title": "Stage Fright",
+    "overview": "A high-end musical theater camp is terrorized by a bloodthirsty killer who hates musical theater.",
+    "genre_ids": [
+      27,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": 16163,
+    "release_year": "2014",
+    "popularity": 0.7138,
+    "vote_average": 5.397,
+    "vote_count": 141,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/a92NoM9rikfHrLbWS2Isg0cYXw4.jpg"
+  },
+  {
+    "id": 16958,
+    "title": "The Asphalt Jungle",
+    "overview": "Recently paroled from prison, legendary burglar \"Doc\" Riedenschneider, with funding from Alonzo Emmerich, a crooked lawyer, gathers a small group of veteran criminals together in the Midwest for a big jewel heist.",
+    "genre_ids": [
+      80,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": -7174,
+    "release_year": "1950",
+    "popularity": 1.4654,
+    "vote_average": 7.5,
+    "vote_count": 489,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/8xsUnT0P2fJWQv9jGDhs3i9Zx2l.jpg"
+  },
+  {
+    "id": 678,
+    "title": "Out of the Past",
+    "overview": "Jeff Bailey seems to be a mundane gas station owner in remote Bridgeport, California. He is dating local girl Ann Miller and lives a quiet life. But Jeff has a secret past, and when a mysterious stranger arrives in town, Jeff is forced to return to the dark world he had tried to escape.",
+    "genre_ids": [
+      80,
+      53,
+      9648,
+      0,
+      0
+    ],
+    "release_days": -8073,
+    "release_year": "1947",
+    "popularity": 1.8141,
+    "vote_average": 7.6,
+    "vote_count": 604,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/lnUK6Cg5ARM0qaq0B5SG20VAM0h.jpg"
+  },
+  {
+    "id": 1942,
+    "title": "Bunny Lake Is Missing",
+    "overview": "A woman reports that her young daughter is missing, but there seems to be no evidence that she ever existed.",
+    "genre_ids": [
+      9648,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": -1551,
+    "release_year": "1965",
+    "popularity": 0.8379,
+    "vote_average": 7.211,
+    "vote_count": 190,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/zsZ2PAMMyBhkn5OSC8Qnror2KCA.jpg"
+  },
+  {
+    "id": 909,
+    "title": "Meet Me in St. Louis",
+    "overview": "Young love and childish fears highlight a year in the life of a turn-of-the-century family up to the 1904 St. Louis World's Fair.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      10751,
+      0
+    ],
+    "release_days": -9165,
+    "release_year": "1944",
+    "popularity": 1.2176,
+    "vote_average": 7,
+    "vote_count": 390,
+    "language_code": 0,
+    "title_length": 20,
+    "poster_path": "/ekVeUvG81pidsv2LMtWf5yYcNbq.jpg"
+  },
+  {
+    "id": 5516,
+    "title": "The Ladykillers",
+    "overview": "An eccentric, if not charming Southern professor and his crew pose as a band in order to rob a casino, all under the nose of his unsuspecting landlord – a sharp old woman.",
+    "genre_ids": [
+      35,
+      80,
+      53,
+      0,
+      0
+    ],
+    "release_days": 12502,
+    "release_year": "2004",
+    "popularity": 2.4761,
+    "vote_average": 6.131,
+    "vote_count": 1628,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/l4g9R39NCp6VaYFrw6q8JwKNW9x.jpg"
+  },
+  {
+    "id": 16093,
+    "title": "Carnival of Souls",
+    "overview": "Mary Henry ends up the sole survivor of a fatal car accident through mysterious circumstances. Trying to put the incident behind her, she moves to Utah and takes a job as a church organist. But her fresh start is interrupted by visions of a fiendish man. As the visions begin to occur more frequently, Mary finds herself drawn to the deserted carnival on the outskirts of town. The strangely alluring carnival may hold the secret to her tragic past.",
+    "genre_ids": [
+      27,
+      9648,
+      14,
+      0,
+      0
+    ],
+    "release_days": -2617,
+    "release_year": "1962",
+    "popularity": 1.042,
+    "vote_average": 6.9,
+    "vote_count": 483,
+    "language_code": 0,
+    "title_length": 17,
+    "poster_path": "/9ddPGH7kMe81xznwIKCt17VFUPi.jpg"
+  },
+  {
+    "id": 851,
+    "title": "Brief Encounter",
+    "overview": "Returning home from a shopping trip to a nearby town, bored suburban housewife Laura Jesson is thrown by happenstance into an acquaintance with virtuous doctor Alec Harvey. Their casual friendship soon develops during their weekly visits into something more emotionally fulfilling than either expected, and they must wrestle with the potential havoc their deepening relationship would have on their lives and the lives of those they love.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -8804,
+    "release_year": "1945",
+    "popularity": 1.6259,
+    "vote_average": 7.705,
+    "vote_count": 643,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/jC9EwLJcGhYMSQAHu2LxkKN5v7O.jpg"
+  },
+  {
+    "id": 22692,
+    "title": "A Star Is Born",
+    "overview": "Esther Blodgett is just another starry-eyed farm kid trying to break into the movies. Waitressing at a Hollywood party, she catches the eye of her idol Norman Maine, is sent for a screen test, and before long attains stardom as newly minted Vicki Lester. She and Norman marry, though his career soon dwindles to nothing due to his chronic alcoholism.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11937,
+    "release_year": "1937",
+    "popularity": 1.3087,
+    "vote_average": 7.126,
+    "vote_count": 219,
+    "language_code": 0,
+    "title_length": 14,
+    "poster_path": "/90EfCmXXWOs5dy7rHTNvGT9T8Kz.jpg"
+  },
+  {
+    "id": 18299,
+    "title": "Love in the Afternoon",
+    "overview": "Lovestruck conservatory student Ariane pretends to be just as much a cosmopolitan lover as the worldly mature Frank Flannagan hoping that l’amour will take hold.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -4600,
+    "release_year": "1957",
+    "popularity": 1.2161,
+    "vote_average": 7,
+    "vote_count": 310,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/jCHVviBhRQ7OkJFQfziO2N2ZJmh.jpg"
+  },
+  {
+    "id": 1272872,
+    "title": "Pillow Talk",
+    "overview": "When Margot unsuccessfully reenacts the moves she learned in her self defense class with her boyfriend, fear rears its ugly head and she imagines the worst about her best friend Cami’s one night stand.",
+    "genre_ids": [
+      35,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": 19853,
+    "release_year": "2024",
+    "popularity": 0.0525,
+    "vote_average": 0,
+    "vote_count": 0,
+    "language_code": 0,
+    "title_length": 11,
+    "poster_path": "/huHdPOw9AqqxSM6OwObwWB2zVvz.jpg"
+  },
+  {
+    "id": 25431,
+    "title": "Adam's Rib",
+    "overview": "A woman's attempted murder of her uncaring husband results in everyday quarrels in the lives of Adam and Amanda, a pair of happily married lawyers who end up on opposite sides of the case in court.",
+    "genre_ids": [
+      35,
+      18,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -7349,
+    "release_year": "1949",
+    "popularity": 0.969,
+    "vote_average": 7.092,
+    "vote_count": 311,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/k9gT6d2sDT9Jd4dvzHowTt3l6Zg.jpg"
+  },
+  {
+    "id": 13972,
+    "title": "The Women",
+    "overview": "The story centers on a group of gossipy, high-society women who spend their days at the beauty salon and haunting fashion shows. The sweet, happily-wedded Mary Haines finds her marriage in trouble when shop girl Crystal Allen gets her hooks into Mary's man.",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": 14134,
+    "release_year": "2008",
+    "popularity": 1.694,
+    "vote_average": 5.1,
+    "vote_count": 343,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/iFQrK0NHA4OMAvzyJVW4DA0kAFz.jpg"
+  },
+  {
+    "id": 10653,
+    "title": "The Seven Year Itch",
+    "overview": "With his family away for their annual summer holiday, a publishing executive decides to live a bachelor's life. The beautiful but ditzy blonde from the apartment above catches his eye and they soon start spending time together—maybe a little too much time!",
+    "genre_ids": [
+      35,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -5326,
+    "release_year": "1955",
+    "popularity": 1.8263,
+    "vote_average": 7.063,
+    "vote_count": 914,
+    "language_code": 0,
+    "title_length": 19,
+    "poster_path": "/ecyPkx1kI3OtRrU5QhddPfgv2mx.jpg"
+  },
+  {
+    "id": 426063,
+    "title": "Nosferatu",
+    "overview": "A gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her, causing untold horror in its wake.",
+    "genre_ids": [
+      27,
+      14,
+      0,
+      0,
+      0
+    ],
+    "release_days": 20082,
+    "release_year": "2024",
+    "popularity": 21.9217,
+    "vote_average": 6.714,
+    "vote_count": 2617,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Metropolis",
+    "overview": "In a futuristic city sharply divided between the rich and the poor, the son of the city's mastermind meets a prophet who predicts the coming of a savior to mediate their differences.",
+    "genre_ids": [
+      18,
+      878,
+      0,
+      0,
+      0
+    ],
+    "release_days": -15670,
+    "release_year": "1927",
+    "popularity": 5.2638,
+    "vote_average": 8.107,
+    "vote_count": 2856,
+    "language_code": 0,
+    "title_length": 10,
+    "poster_path": "/vZIJxGnjcswPCAa52jhbl01FQkV.jpg"
+  },
+  {
+    "id": 69703,
+    "title": "The Trial",
+    "overview": "Joseph K. awakes one morning, to find two strange men in his room, telling him he has been arrested. Joseph is not told what he is charged with, and despite being \"arrested,\" is allowed to remain free and go to work. But despite the strange nature of his arrest, Joseph soon learns that his trial, however odd, is very real, and tries desperately to spare himself from the court's judgement.",
+    "genre_ids": [
+      53,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": 8569,
+    "release_year": "1993",
+    "popularity": 0.5672,
+    "vote_average": 5.804,
+    "vote_count": 28,
+    "language_code": 0,
+    "title_length": 9,
+    "poster_path": "/t3nlCW5pGQJSdLXlq5rwZFNaggb.jpg"
+  },
+  {
+    "id": 992,
+    "title": "Sherlock Jr.",
+    "overview": "A film projectionist longs to be a detective, and puts his meagre skills to work when he is framed by a rival for stealing his girlfriend's father's pocketwatch.",
+    "genre_ids": [
+      28,
+      35,
+      9648,
+      0,
+      0
+    ],
+    "release_days": -16695,
+    "release_year": "1924",
+    "popularity": 1.5247,
+    "vote_average": 8.062,
+    "vote_count": 1039,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg"
+  },
+  {
+    "id": 346364,
+    "title": "It",
+    "overview": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.",
+    "genre_ids": [
+      27,
+      53,
+      0,
+      0,
+      0
+    ],
+    "release_days": 17415,
+    "release_year": "2017",
+    "popularity": 21.461,
+    "vote_average": 7.239,
+    "vote_count": 19326,
+    "language_code": 0,
+    "title_length": 2,
+    "poster_path": "/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
+  },
+  {
+    "id": 24008,
+    "title": "Monkey Business",
+    "overview": "Research chemist Barnaby Fulton works on a fountain of youth pill for a chemical company. One of the labs chimps gets loose in the laboratory and mixes chemicals, but then pours the mix into the water cooler. When trying one of his own samples, washed down with water from the cooler, Fulton begins to act just like a twenty-year-old and believes his potion is working. Soon his wife and boss are also behaving like children.",
+    "genre_ids": [
+      35,
+      878,
+      0,
+      0,
+      0
+    ],
+    "release_days": -6329,
+    "release_year": "1952",
+    "popularity": 1.0177,
+    "vote_average": 6.7,
+    "vote_count": 264,
+    "language_code": 0,
+    "title_length": 15,
+    "poster_path": "/ffdlBEdEjGAi4Dh0mnv7R9feOwX.jpg"
+  },
+  {
+    "id": 19075,
+    "title": "A Midsummer Night's Dream",
+    "overview": "Four young people escape Athens to a forest where the king and queen of the fairies are quarreling, while meanwhile, a troupe of amateur actors rehearses a play. When the fairy Puck uses a magic flower to make people fall in love, the whole thing becomes a little bit confused...",
+    "genre_ids": [
+      14,
+      10749,
+      35,
+      0,
+      0
+    ],
+    "release_days": -12503,
+    "release_year": "1935",
+    "popularity": 0.8499,
+    "vote_average": 6.409,
+    "vote_count": 44,
+    "language_code": 0,
+    "title_length": 25,
+    "poster_path": "/dO3pIxHN0pEuZ233N3IZAI4pgpg.jpg"
+  },
+  {
+    "id": 16885,
+    "title": "The General",
+    "overview": "The real-life story of Dublin folk hero and criminal Martin Cahill, who pulled off two daring robberies in Ireland with his team, but attracted unwanted attention from the police, the I.R.A., the U.V.F., and members of his own team.",
+    "genre_ids": [
+      80,
+      18,
+      0,
+      0,
+      0
+    ],
+    "release_days": 10347,
+    "release_year": "1998",
+    "popularity": 0.9984,
+    "vote_average": 6.7,
+    "vote_count": 115,
+    "language_code": 0,
+    "title_length": 11,
+    "poster_path": "/3UUR2Evm2JtC2odd2UMYgs9Yi1x.jpg"
+  },
+  {
+    "id": 11113,
+    "title": "My Fair Lady",
+    "overview": "A snobbish phonetics professor agrees to a wager that he can take a flower girl and make her presentable in high society.",
+    "genre_ids": [
+      10402,
+      35,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -1898,
+    "release_year": "1964",
+    "popularity": 2.4337,
+    "vote_average": 7.509,
+    "vote_count": 1335,
+    "language_code": 0,
+    "title_length": 12,
+    "poster_path": "/bTXVc29lGSNclf94VIZ49W4gGKl.jpg"
+  },
+  {
+    "id": 261,
+    "title": "Cat on a Hot Tin Roof",
+    "overview": "An alcoholic ex-football player drinks his days away, having failed to come to terms with his sexuality and his real feelings for his football buddy who died after an ambiguous accident. His wife is crucified by her desperation to make him desire her: but he resists the affections of his wife. His reunion with his father—who is dying of cancer—jogs a host of memories and revelations for both father and son.",
+    "genre_ids": [
+      18,
+      0,
+      0,
+      0,
+      0
+    ],
+    "release_days": -4143,
+    "release_year": "1958",
+    "popularity": 1.9296,
+    "vote_average": 7.654,
+    "vote_count": 777,
+    "language_code": 0,
+    "title_length": 21,
+    "poster_path": "/reO2NXIYPeBqehTsmia0P9rSMDv.jpg"
+  },
+  {
+    "id": 1976,
+    "title": "Jezebel",
+    "overview": "In 1850s Louisiana, the willfulness of a tempestuous Southern belle threatens to destroy all who care for her.",
+    "genre_ids": [
+      18,
+      10749,
+      0,
+      0,
+      0
+    ],
+    "release_days": -11604,
+    "release_year": "1938",
+    "popularity": 1.0542,
+    "vote_average": 7,
+    "vote_count": 201,
+    "language_code": 0,
+    "title_length": 7,
+    "poster_path": "/xewvSLrr0Ru6qVMwVqVheFLaGm4.jpg"
+  },
+  {
+    "id": 905,
+    "title": "Pandora's Box",
+    "overview": "Lulu is a young woman so beautiful and alluring that few can resist her siren charms. The men drawn into her web include respectable newspaper publisher Dr. Ludwig Schön, his musical producer son Alwa, circus performer Rodrigo Quast, and seedy old Schigolch. When Lulu's charms inevitably lead to tragedy, the downward spiral encompasses them all.",
+    "genre_ids": [
+      18,
+      80,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -14946,
+    "release_year": "1929",
+    "popularity": 1.4899,
+    "vote_average": 7.5,
+    "vote_count": 233,
+    "language_code": 0,
+    "title_length": 13,
+    "poster_path": "/qlAMlgm8lm859GkxSpbr2ziixXE.jpg"
+  },
+  {
+    "id": 770,
+    "title": "Gone with the Wind",
+    "overview": "The spoiled daughter of a Georgia plantation owner conducts a tumultuous romance with a cynical profiteer during the American Civil War and Reconstruction Era.",
+    "genre_ids": [
+      18,
+      10752,
+      10749,
+      0,
+      0
+    ],
+    "release_days": -10975,
+    "release_year": "1939",
+    "popularity": 7.2206,
+    "vote_average": 7.934,
+    "vote_count": 4121,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg"
+  },
+  {
+    "id": 947,
+    "title": "Lawrence of Arabia",
+    "overview": "The story of British officer T.E. Lawrence's mission to aid the Arab tribes in their revolt against the Ottoman Empire during the First World War. Lawrence becomes a flamboyant, messianic figure in the cause of Arab unity but his psychological instability threatens to undermine his achievements.",
+    "genre_ids": [
+      12,
+      36,
+      10752,
+      0,
+      0
+    ],
+    "release_days": -2578,
+    "release_year": "1962",
+    "popularity": 5.748,
+    "vote_average": 7.998,
+    "vote_count": 3127,
+    "language_code": 0,
+    "title_length": 18,
+    "poster_path": "/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg"
+  }
+]
