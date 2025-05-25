@@ -73,6 +73,25 @@ const getStatusSchema = {
             },
           },
         },
+        profileData: {
+          type: "object",
+          properties: {
+            displayName: { type: "string" },
+            username: { type: "string" },
+            avatarUrl: { type: ["string", "null"] },
+            location: { type: ["string", "null"] },
+            bio: { type: ["string", "null"] },
+            stats: {
+              type: "object",
+              properties: {
+                totalFilms: { type: "number" },
+                filmsThisYear: { type: "number" },
+                following: { type: "number" },
+                followers: { type: "number" },
+              },
+            },
+          },
+        },
         error: { type: ["string", "null"] },
       },
     },
@@ -84,6 +103,90 @@ const getStatusSchema = {
     },
   },
 };
+
+// Function to scrape profile data
+async function scrapeProfile(page, username) {
+  try {
+    const profileUrl = `https://letterboxd.com/${username}/`;
+    await page.goto(profileUrl, { waitUntil: "networkidle2", timeout: 60000 });
+
+    // Wait for profile page to load
+    await page.waitForSelector(".profile-summary", { timeout: 10000 });
+
+    const html = await page.content();
+    const $ = cheerio.load(html);
+
+    // Extract profile data
+    const displayName = $(".person-display-name .displayname").text().trim();
+    const usernameFromTooltip =
+      $(".person-display-name .displayname").attr("data-original-title") ||
+      username;
+
+    // Avatar URL extraction
+    let avatarUrl = $(".profile-avatar .avatar img").attr("src");
+    if (avatarUrl) {
+      // Get the largest image version
+      avatarUrl = avatarUrl.replace(
+        /\/avtr-\d+-\d+-\d+-\d+-crop/,
+        "/avtr-0-1000-0-1000-crop"
+      );
+    }
+
+    // Extract location
+    const location =
+      $(".profile-metadata .metadatum .label").text().trim() || null;
+
+    // Extract bio (if exists)
+    const bio = $(".profile-bio .collapsible-text").text().trim() || null;
+
+    // Extract statistics
+    const totalFilms =
+      parseInt(
+        $(".profile-statistic:contains('Films') .value").text().trim()
+      ) || 0;
+    const filmsThisYear =
+      parseInt(
+        $(".profile-statistic:contains('This year') .value").text().trim()
+      ) || 0;
+    const following =
+      parseInt(
+        $(".profile-statistic:contains('Following') .value").text().trim()
+      ) || 0;
+    const followers =
+      parseInt(
+        $(".profile-statistic:contains('Followers') .value").text().trim()
+      ) || 0;
+
+    return {
+      displayName,
+      username: usernameFromTooltip,
+      avatarUrl,
+      location,
+      bio,
+      stats: {
+        totalFilms,
+        filmsThisYear,
+        following,
+        followers,
+      },
+    };
+  } catch (error) {
+    console.error("Error scraping profile:", error);
+    return {
+      displayName: username,
+      username,
+      avatarUrl: null,
+      location: null,
+      bio: null,
+      stats: {
+        totalFilms: 0,
+        filmsThisYear: 0,
+        following: 0,
+        followers: 0,
+      },
+    };
+  }
+}
 
 async function startScraping(username, jobId) {
   let browser;
@@ -103,9 +206,19 @@ async function startScraping(username, jobId) {
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     );
 
-    // Visit the first page to determine total pages
+    // First, scrape the profile data
+    job.profileData = await scrapeProfile(page, username);
+
+    // Then, scrape films
     await page.goto(filmsUrl, { waitUntil: "networkidle2", timeout: 60000 });
-    await page.waitForSelector("ul.poster-list", { timeout: 10000 });
+    await page
+      .waitForSelector("ul.poster-list", { timeout: 10000 })
+      .catch(() => {
+        // If the poster list is not found, user might not have any films or the page structure changed
+        console.log(
+          "Poster list not found - user may not have any rated films"
+        );
+      });
 
     let html = await page.content();
     let $ = cheerio.load(html);
@@ -129,6 +242,16 @@ async function startScraping(username, jobId) {
         waitUntil: "networkidle2",
         timeout: 60000,
       });
+
+      // Check if poster list exists
+      const posterListExists = await page.evaluate(() => {
+        return !!document.querySelector("ul.poster-list");
+      });
+
+      if (!posterListExists) {
+        console.log(`No poster list found on page ${currentPage}`);
+        continue;
+      }
 
       await page.waitForSelector("ul.poster-list", { timeout: 10000 });
 
@@ -155,18 +278,18 @@ async function startScraping(username, jobId) {
           return;
         }
 
-        let rating = "0";
+        let rating = 0;
         if (ratingText) {
           const stars = (ratingText.match(/★/g) || []).length;
           const halfStar = ratingText.includes("½") ? 0.5 : 0;
-          rating = (stars + halfStar).toString();
+          rating = stars + halfStar;
         }
 
         const filmData = {
           Name: titleAttr.replace(/\(\d{4}\)$/, "").trim(),
           Year: year,
           "Letterboxd URI": `https://letterboxd.com${href}`,
-          Rating: Number(rating),
+          Rating: rating,
         };
 
         job.data.push(filmData);
@@ -210,6 +333,7 @@ module.exports = async function (fastify, opts) {
       scrapingJobs.set(jobId, {
         status: "pending",
         data: [],
+        profileData: null,
         progress: 0,
         totalPages: 1,
       });
@@ -248,7 +372,8 @@ module.exports = async function (fastify, opts) {
       status: job.status,
       progress: job.progress,
       totalPages: job.totalPages,
-      data: job.status === "completed" ? job.data : undefined,
+      data: job.status === "completed" ? job.data : [],
+      profileData: job.profileData,
       error: job.error,
     };
   });

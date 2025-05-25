@@ -69,6 +69,13 @@ const processedEyeCandyPath = path.join(
   "../../public/eye-candy.json"
 );
 
+const processedNetflixPath = path.join(__dirname, "../../public/netflix.json");
+
+const processedPshycosexual2Path = path.join(
+  __dirname,
+  "../../public/psychosexual2.json"
+);
+
 const processedAnimePath = path.join(__dirname, "../../public/anime.json");
 
 let processedMovies;
@@ -88,6 +95,8 @@ let top250WomensMovies;
 let youAreNotTheSameMovies;
 let eyeCandy;
 let anime;
+let netflix;
+let psychoSexual2;
 
 // List of all possible genre IDs
 const genreList = [
@@ -269,6 +278,12 @@ async function recommendMovies(
       break;
     case "anime":
       moviesToRecommendFrom = anime;
+      break;
+    case "netflix":
+      moviesToRecommendFrom = netflix;
+      break;
+    case "psychoSexual2":
+      moviesToRecommendFrom = psychoSexual2;
       break;
     default:
       moviesToRecommendFrom = processedMovies;
@@ -466,6 +481,8 @@ module.exports = async function (fastify, opts) {
     youAreNotTheSameMovies = await loadJSON(processedYourAreNotSamePath);
     eyeCandy = await loadJSON(processedEyeCandyPath);
     anime = await loadJSON(processedAnimePath);
+    netflix = await loadJSON(processedNetflixPath);
+    psychoSexual2 = await loadJSON(processedPshycosexual2Path);
   } catch (error) {
     fastify.log.error(`Error loading movie data: ${error.message}`);
     throw new Error("Failed to load movie data");
