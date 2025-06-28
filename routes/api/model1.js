@@ -431,29 +431,34 @@ async function recommendMovies(
     (movie) =>
       movie.vote_count >= minVoteCount &&
       !watchedMovieIds.includes(movie.id) &&
+      // Check if movie has at least one preferred genre
       (userPreferredGenre === null ||
-        movie.genre_ids.includes(userPreferredGenre))
+        userPreferredGenre.length === 0 ||
+        userPreferredGenre.some((genre) => movie.genre_ids.includes(genre)))
   );
 
   const inputs = filteredMovies.map((movie) => {
-    // Genre score with language preference for animation
     const genreScore =
       movie.genre_ids.reduce((score, genreId) => {
-        const watchCount = genreWatchCount[genreId] || 1; // Avoid division by zero
-        let weight = 1 / watchCount; // Penalize frequently watched genres
+        const watchCount = genreWatchCount[genreId] || 1;
+        let weight = 1 / watchCount;
 
-        // Boost weight for animation genre if preferred language matches
+        // Language boost for animation (unchanged)
         if (
           genreId === 16 &&
           preferredLanguage &&
           movie.original_language === preferredLanguage
         ) {
-          weight *= 2; // Double the weight for preferred language
+          weight *= 2;
         }
 
-        // Boost weight for user's preferred genre
-        if (userPreferredGenre !== null && genreId === userPreferredGenre) {
-          weight *= weights.genreWeight; // Apply genreWeight to prioritize the selected genre
+        // NEW: Boost for any preferred genre in the array
+        if (
+          userPreferredGenre &&
+          userPreferredGenre.length > 0 &&
+          userPreferredGenre.includes(genreId)
+        ) {
+          weight *= weights.genreWeight;
         }
 
         return score + weight;
@@ -527,7 +532,11 @@ const model1Schema = {
       voteAverageWeight: { type: "number" },
       voteCountWeight: { type: "number" },
       popularityWeight: { type: "number" },
-      userPreferredGenre: { type: ["number", "null"], default: null },
+      userPreferredGenre: {
+        type: ["array", "null"],
+        items: { type: "number" },
+        default: null,
+      },
       movie_list: { type: "string" },
     },
   },

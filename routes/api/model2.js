@@ -470,8 +470,10 @@ async function recommendMovies(
     (movie) =>
       movie.vote_count >= minVoteCount &&
       !watchedMovieIds.includes(movie.id) &&
+      // Check if movie has at least one preferred genre
       (userPreferredGenre === null ||
-        movie.genre_ids.includes(userPreferredGenre))
+        userPreferredGenre.length === 0 ||
+        userPreferredGenre.some((genre) => movie.genre_ids.includes(genre)))
   );
 
   if (filteredMovies.length === 0) {
@@ -481,19 +483,28 @@ async function recommendMovies(
   // One-hot encode genres
   const inputs = filteredMovies.map((movie) => {
     const genreFeatures = genreList.map((genreId) => {
-      let weight = movie.genre_ids.includes(genreId)
-        ? genreId === userPreferredGenre
-          ? 10 // Boost preferred genre
-          : 1
-        : 0;
+      // Check if movie has this genre
+      const hasGenre = movie.genre_ids.includes(genreId);
 
-      // Adjust weight for genre 16 (animation) based on language
-      if (genreId === 16 && movie.genre_ids.includes(genreId)) {
+      // Determine base weight
+      let weight = hasGenre ? 1 : 0;
+
+      // Apply preferred genre boost if applicable
+      if (
+        hasGenre &&
+        userPreferredGenre &&
+        userPreferredGenre.includes(genreId)
+      ) {
+        weight = 10; // Boost preferred genres
+      }
+
+      // Special handling for animation genre (ID 16)
+      if (genreId === 16 && hasGenre) {
         if (
           preferredLanguage &&
           movie.original_language === preferredLanguage
         ) {
-          weight *= 2; // Double the weight for preferred language
+          weight *= 2; // Double weight for preferred language
         } else {
           weight *= 0.5; // Reduce weight for non-preferred language
         }
@@ -570,7 +581,11 @@ const model2Schema = {
       voteAverageWeight: { type: "number", default: 1.0 },
       voteCountWeight: { type: "number", default: 0.5 },
       popularityWeight: { type: "number", default: 0.8 },
-      userPreferredGenre: { type: ["number", "null"], default: null },
+      userPreferredGenre: {
+        type: ["array", "null"],
+        items: { type: "number" },
+        default: null,
+      },
     },
   },
   response: {

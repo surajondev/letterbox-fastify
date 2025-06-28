@@ -308,8 +308,10 @@ async function recommendMovies(
     (movie) =>
       movie.vote_count >= minVoteCount &&
       !watchedMovieIds.includes(movie.id) &&
+      // Check if movie has at least one preferred genre
       (userPreferredGenre === null ||
-        movie.genre_ids.includes(userPreferredGenre))
+        userPreferredGenre.length === 0 ||
+        userPreferredGenre.some((genre) => movie.genre_ids.includes(genre)))
   );
 
   if (filteredMovies.length === 0) {
@@ -320,20 +322,25 @@ async function recommendMovies(
     const genreFeatures = genreList.map((genreId) => {
       if (movie.genre_ids.includes(genreId)) {
         const baseWeight = genreWeights[genreId] || 0;
+        let weight = baseWeight;
 
         // Adjust weight for animation genre based on language
         if (genreId === 16 && preferredLanguage) {
           const languageBoost =
             movie.original_language === preferredLanguage ? 2 : 0.5;
-          return baseWeight * languageBoost;
+          weight *= languageBoost;
         }
 
-        // Boost weight for user's preferred genre
-        if (userPreferredGenre !== null && genreId === userPreferredGenre) {
-          return baseWeight * 10; // High weight for preferred genre
+        // NEW: Boost for any preferred genre in the array
+        if (
+          userPreferredGenres &&
+          userPreferredGenres.length > 0 &&
+          userPreferredGenres.includes(genreId)
+        ) {
+          weight *= 10; // Same high weight boost for any preferred genre
         }
 
-        return baseWeight;
+        return weight;
       } else {
         return 0;
       }
@@ -416,7 +423,11 @@ const model3Schema = {
       voteAverageWeight: { type: "number", default: 1.0 },
       voteCountWeight: { type: "number", default: 1.0 },
       popularityWeight: { type: "number", default: 1.0 },
-      userPreferredGenre: { type: ["number", "null"], default: null },
+      userPreferredGenre: {
+        type: ["array", "null"],
+        items: { type: "number" },
+        default: null,
+      },
       movie_list: { type: "string" },
     },
   },
