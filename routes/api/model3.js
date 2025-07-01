@@ -333,9 +333,9 @@ async function recommendMovies(
 
         // NEW: Boost for any preferred genre in the array
         if (
-          userPreferredGenres &&
-          userPreferredGenres.length > 0 &&
-          userPreferredGenres.includes(genreId)
+          userPreferredGenre &&
+          userPreferredGenre.length > 0 &&
+          userPreferredGenre.includes(genreId)
         ) {
           weight *= 10; // Same high weight boost for any preferred genre
         }
