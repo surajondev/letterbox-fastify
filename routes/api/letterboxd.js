@@ -1,8 +1,7 @@
-// routes/api/letterboxd.js
 const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
 
-// In-memory storage for scraping jobs (replace with database in production)
+// In-memory storage for scraping jobs
 const scrapingJobs = new Map();
 
 // Define schema for the Letterboxd API
@@ -110,51 +109,54 @@ async function scrapeProfile(page, username) {
     const profileUrl = `https://letterboxd.com/${username}/`;
     await page.goto(profileUrl, { waitUntil: "networkidle2", timeout: 60000 });
 
-    // Wait for profile page to load
     await page.waitForSelector(".profile-summary", { timeout: 10000 });
 
     const html = await page.content();
     const $ = cheerio.load(html);
 
-    // Extract profile data
     const displayName = $(".person-display-name .displayname").text().trim();
     const usernameFromTooltip =
       $(".person-display-name .displayname").attr("data-original-title") ||
       username;
 
-    // Avatar URL extraction
     let avatarUrl = $(".profile-avatar .avatar img").attr("src");
     if (avatarUrl) {
-      // Get the largest image version
       avatarUrl = avatarUrl.replace(
         /\/avtr-\d+-\d+-\d+-\d+-crop/,
         "/avtr-0-1000-0-1000-crop"
       );
     }
 
-    // Extract location
     const location =
       $(".profile-metadata .metadatum .label").text().trim() || null;
-
-    // Extract bio (if exists)
     const bio = $(".profile-bio .collapsible-text").text().trim() || null;
-
-    // Extract statistics
     const totalFilms =
       parseInt(
-        $(".profile-statistic:contains('Films') .value").text().trim()
+        $(".profile-statistic:contains('Films') .value")
+          .text()
+          .trim()
+          .replace(/,/g, "")
       ) || 0;
     const filmsThisYear =
       parseInt(
-        $(".profile-statistic:contains('This year') .value").text().trim()
+        $(".profile-statistic:contains('This year') .value")
+          .text()
+          .trim()
+          .replace(/,/g, "")
       ) || 0;
     const following =
       parseInt(
-        $(".profile-statistic:contains('Following') .value").text().trim()
+        $(".profile-statistic:contains('Following') .value")
+          .text()
+          .trim()
+          .replace(/,/g, "")
       ) || 0;
     const followers =
       parseInt(
-        $(".profile-statistic:contains('Followers') .value").text().trim()
+        $(".profile-statistic:contains('Followers') .value")
+          .text()
+          .trim()
+          .replace(/,/g, "")
       ) || 0;
 
     return {
@@ -189,6 +191,7 @@ async function scrapeProfile(page, username) {
 }
 
 async function startScraping(username, jobId) {
+  console.log(`[Job ${jobId}] Scraping process started for user: ${username}`);
   let browser;
   const job = scrapingJobs.get(jobId);
 
@@ -206,19 +209,15 @@ async function startScraping(username, jobId) {
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     );
 
-    // First, scrape the profile data
     job.profileData = await scrapeProfile(page, username);
 
-    // Then, scrape films
     await page.goto(filmsUrl, { waitUntil: "networkidle2", timeout: 60000 });
-    await page
-      .waitForSelector("ul.poster-list", { timeout: 10000 })
-      .catch(() => {
-        // If the poster list is not found, user might not have any films or the page structure changed
-        console.log(
-          "Poster list not found - user may not have any rated films"
-        );
-      });
+    // UPDATE: Wait for the new container selector
+    await page.waitForSelector("ul.grid", { timeout: 10000 }).catch(() => {
+      console.log(
+        `[Job ${jobId}] Film grid ('ul.grid') not found - user may not have any rated films`
+      );
+    });
 
     let html = await page.content();
     let $ = cheerio.load(html);
@@ -232,52 +231,68 @@ async function startScraping(username, jobId) {
     }
 
     job.totalPages = totalPages;
+    console.log(`[Job ${jobId}] Found ${totalPages} page(s) to scrape.`);
 
-    // Loop through all pages
     for (let currentPage = 1; currentPage <= totalPages; currentPage++) {
-      const pageUrl =
-        currentPage === 1 ? filmsUrl : `${filmsUrl}page/${currentPage}/`;
+      if (currentPage > 1) {
+        const pageUrl = `${filmsUrl}page/${currentPage}/`;
+        await page.goto(pageUrl, {
+          waitUntil: "networkidle2",
+          timeout: 60000,
+        });
+      }
 
-      await page.goto(pageUrl, {
-        waitUntil: "networkidle2",
-        timeout: 60000,
-      });
-
-      // Check if poster list exists
+      // UPDATE: Check for the new container 'ul.grid'
       const posterListExists = await page.evaluate(() => {
-        return !!document.querySelector("ul.poster-list");
+        return !!document.querySelector("ul.grid");
       });
 
       if (!posterListExists) {
-        console.log(`No poster list found on page ${currentPage}`);
+        console.log(`[Job ${jobId}] No film grid found on page ${currentPage}`);
         continue;
       }
 
-      await page.waitForSelector("ul.poster-list", { timeout: 10000 });
-
-      const filmListHTML = await page.$eval(
-        "ul.poster-list",
-        (el) => el.outerHTML
-      );
-
+      // UPDATE: Get HTML from the new container 'ul.grid'
+      const filmListHTML = await page.$eval("ul.grid", (el) => el.outerHTML);
       $ = cheerio.load(filmListHTML);
 
-      $("li.poster-container").each((index, el) => {
+      // UPDATE: Target the new list item selector 'li.griditem'
+      const filmsOnPage = $("li.griditem");
+      console.log(
+        `[Job ${jobId}] Page ${currentPage}/${totalPages}: Found ${filmsOnPage.length} films.`
+      );
+
+      filmsOnPage.each((index, el) => {
         const $el = $(el);
-        const $poster = $el.find("[data-film-name]");
+        // UPDATE: Film data is now in a div with this class
+        const $dataContainer = $el.find("div.react-component");
 
-        const titleAttr = $poster.attr("data-film-name");
-        const href = $poster.attr("data-film-link");
-        const ratingText = $el.find(".rating").text().trim();
-        const fullTitle = $el.find("a.frame").attr("data-original-title");
-        const yearMatch = fullTitle?.match(/\((\d{4})\)/);
-        const year = yearMatch ? yearMatch[1] : null;
-
-        if (!titleAttr || !href) {
-          console.log(`Skipping film at index ${index} on page ${currentPage}`);
-          return;
+        if ($dataContainer.length === 0) {
+          return; // Skip if the main data container isn't found
         }
 
+        // UPDATE: Use new data attribute names
+        const nameWithYear = $dataContainer.data("item-name");
+        const slug = $dataContainer.data("item-slug");
+
+        if (!nameWithYear || !slug) {
+          return; // Skip if essential data is missing
+        }
+
+        // UPDATE: Parse name and year from the combined string
+        let name = nameWithYear;
+        let year = null;
+        const yearMatch = nameWithYear.match(/\s\((\d{4})\)$/); // Matches "(YYYY)" at the end of the string
+        if (yearMatch) {
+          year = yearMatch[1];
+          name = nameWithYear.replace(yearMatch[0], "").trim();
+        }
+
+        // The rating logic remains the same, just confirm the selector is correct
+        const ratingText = $el
+          .find(".poster-viewingdata .rating")
+          .text()
+          .trim();
         let rating = 0;
         if (ratingText) {
           const stars = (ratingText.match(/★/g) || []).length;
@@ -286,36 +301,45 @@ async function startScraping(username, jobId) {
         }
 
         const filmData = {
-          Name: titleAttr.replace(/\(\d{4}\)$/, "").trim(),
+          Name: name,
           Year: year,
-          "Letterboxd URI": `https://letterboxd.com${href}`,
+          "Letterboxd URI": `https://letterboxd.com${slug}`,
           Rating: rating,
         };
+
+        // DEBUG LOG: Log the first film parsed on the first page to confirm success
+        if (currentPage === 1 && index === 0) {
+          console.log(
+            `[Job ${jobId}] First film parsed successfully:`,
+            filmData
+          );
+        }
 
         job.data.push(filmData);
       });
 
       job.progress = currentPage / totalPages;
-
-      // Throttle requests
-      await new Promise((res) => setTimeout(res, 1000));
+      // Added a smaller delay to be slightly faster
+      await new Promise((res) => setTimeout(res, 500));
     }
 
     job.status = "completed";
+    console.log(
+      `[Job ${jobId}] Scraping completed successfully. Found ${job.data.length} total films.`
+    );
   } catch (error) {
     job.status = "failed";
     job.error = error.message;
-    console.error("Error scraping Letterboxd:", error);
+    console.error(`[Job ${jobId}] Error during scraping:`, error);
   } finally {
     if (browser) await browser.close();
-
-    // Clean up after some time (1 hour)
     setTimeout(() => {
       scrapingJobs.delete(jobId);
-    }, 3600000);
+    }, 3600000); // Clean up job after 1 hour
   }
 }
 
+// Correctly export the plugin as an async function
 module.exports = async function (fastify, opts) {
   // Endpoint to start scraping
   fastify.post("/", { schema: startScrapingSchema }, async (request, reply) => {
@@ -328,7 +352,6 @@ module.exports = async function (fastify, opts) {
         });
       }
 
-      // Create a new job
       const jobId = `job_${Date.now()}`;
       scrapingJobs.set(jobId, {
         status: "pending",
@@ -338,7 +361,6 @@ module.exports = async function (fastify, opts) {
         totalPages: 1,
       });
 
-      // Start scraping in the background
       startScraping(username, jobId);
 
       return {
